@@ -1,0 +1,3273 @@
+<list>
+  <ProcessDefinition>
+    <processDefinitionPK>
+      <companyId>1</companyId>
+      <processId>processo_lancamento_nfs</processId>
+    </processDefinitionPK>
+    <processDescription>Processo de Lançamento de NFS</processDescription>
+    <instruction></instruction>
+    <active>true</active>
+    <publicProcess>false</publicProcess>
+    <volumeId>Default</volumeId>
+    <categoryId>Lançamento de NFS</categoryId>
+    <managerEngineAllocationId></managerEngineAllocationId>
+    <managerEngineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;Gestor_do_Processo_de_Lançamento_de_NFS&lt;/Group&gt;&lt;/AssignmentController&gt;</managerEngineAllocationConfiguration>
+    <snapshotFrequency>0</snapshotFrequency>
+    <baseDay>0</baseDay>
+    <baseMonth>0</baseMonth>
+    <periodId>Default</periodId>
+    <uniqueCardVersion>false</uniqueCardVersion>
+    <keyWord></keyWord>
+    <complementsLevel>1</complementsLevel>
+    <notifyRequisitionerComplements>true</notifyRequisitionerComplements>
+    <notifyManagerComplements>false</notifyManagerComplements>
+    <deadlineTime>0</deadlineTime>
+    <warningDeadlineTime>0</warningDeadlineTime>
+    <notifyAuthorityComplements>true</notifyAuthorityComplements>
+  </ProcessDefinition>
+  <ProcessDefinitionVersion>
+    <processDefinitionVersionPK>
+      <companyId>1</companyId>
+      <processId>Processo de Lançamento de NFS</processId>
+      <version>13</version>
+    </processDefinitionVersionPK>
+    <versionDescription></versionDescription>
+    <formId>46710</formId>
+    <editionMode>true</editionMode>
+    <updateAttachmentsVersion>false</updateAttachmentsVersion>
+    <controlsAttachmentsSecurity>false</controlsAttachmentsSecurity>
+    <active>true</active>
+    <blockedVersion>false</blockedVersion>
+    <counterSign>false</counterSign>
+    <openInstances>0</openInstances>
+    <bpmnVersion>2</bpmnVersion>
+    <processStates/>
+    <favorito>false</favorito>
+    <inheritFormSecurity>false</inheritFormSecurity>
+    <mobileReady>true</mobileReady>
+  </ProcessDefinitionVersion>
+  <list>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <sequence>4</sequence>
+      </processStatePK>
+      <stateName>Início</stateName>
+      <stateDescription>Início</stateDescription>
+      <instruction>Início de solicitação, preenchido automaticamente pelo robô de I.A.</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>true</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>0</positionX>
+      <positionY>258</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>10</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <sequence>6</sequence>
+      </processStatePK>
+      <stateName>Curadoria Manual</stateName>
+      <stateDescription>Curadoria Manual</stateDescription>
+      <instruction>Responsável deverá preencher dados da nota fiscal que não foram preenchidas e&#xd;
+selecionar o aprovador da NFS.</instruction>
+      <deadlineTime>57600</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>18000</allowanceAuthorityTime>
+      <frequenceAuthorityTime>10800</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>381</positionX>
+      <positionY>243</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>true</notifyManagerDelay>
+      <allowanceManagerTime>57600</allowanceManagerTime>
+      <frequenceManagerTime>10800</frequenceManagerTime>
+      <inhibitTransfer>true</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <sequence>7</sequence>
+      </processStatePK>
+      <stateName>Aprovação da Nota - Matriz</stateName>
+      <stateDescription>Aprovação da Nota - Matriz</stateDescription>
+      <instruction>Responsável deverá tomar uma ação de aprovar ou reprovar a inclusão da NFS</instruction>
+      <deadlineTime>57600</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>18000</allowanceAuthorityTime>
+      <frequenceAuthorityTime>10800</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>914</positionX>
+      <positionY>370</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>true</notifyManagerDelay>
+      <allowanceManagerTime>57600</allowanceManagerTime>
+      <frequenceManagerTime>10800</frequenceManagerTime>
+      <inhibitTransfer>true</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <sequence>9</sequence>
+      </processStatePK>
+      <stateName>Integração do Datasul</stateName>
+      <stateDescription>Integração do Datasul</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>false</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>0</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>1650</positionX>
+      <positionY>109</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>82</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>1</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <sequence>10</sequence>
+      </processStatePK>
+      <stateName>Correção da Integração</stateName>
+      <stateDescription>Correção da Integração</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>1800</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>1650</positionX>
+      <positionY>243</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>true</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <sequence>13</sequence>
+      </processStatePK>
+      <stateName>Aprovação da Nota - Filial</stateName>
+      <stateDescription>Aprovação da Nota - Filial</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>914</positionX>
+      <positionY>120</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>true</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <sequence>49</sequence>
+      </processStatePK>
+      <stateName>Curadoria Aprovação</stateName>
+      <stateDescription>Curadoria Aprovação</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>1427</positionX>
+      <positionY>370</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>true</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <sequence>57</sequence>
+      </processStatePK>
+      <stateName>Consulta Items/Aprovador Datasul</stateName>
+      <stateDescription>Consulta Items/Aprovador Datasul</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>94</positionX>
+      <positionY>235</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>82</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>1</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <sequence>61</sequence>
+      </processStatePK>
+      <stateName>Correção da Integração</stateName>
+      <stateDescription>Correção da Integração</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>94</positionX>
+      <positionY>387</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>true</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <sequence>67</sequence>
+      </processStatePK>
+      <stateName>Vincular Anexos</stateName>
+      <stateDescription>Vincular Anexos</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>582</positionX>
+      <positionY>241</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>82</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>1</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <sequence>69</sequence>
+      </processStatePK>
+      <stateName>Correção da Integração</stateName>
+      <stateDescription>Correção da Integração</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>582</positionX>
+      <positionY>328</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>true</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <sequence>14</sequence>
+      </processStatePK>
+      <stateName>Intermediário</stateName>
+      <stateDescription>Intermediário</stateDescription>
+      <instruction>Evento intermediário do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>1</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>1640</positionX>
+      <positionY>160</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>43</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <parentSequence>9</parentSequence>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <sequence>60</sequence>
+      </processStatePK>
+      <stateName>Intermediário</stateName>
+      <stateDescription>Intermediário</stateDescription>
+      <instruction>Evento intermediário do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>1</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>94</positionX>
+      <positionY>288</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>43</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <parentSequence>57</parentSequence>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <sequence>68</sequence>
+      </processStatePK>
+      <stateName>Intermediário</stateName>
+      <stateDescription>Intermediário</stateDescription>
+      <instruction>Evento intermediário do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>1</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>580</positionX>
+      <positionY>290</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>43</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <parentSequence>67</parentSequence>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <sequence>5</sequence>
+      </processStatePK>
+      <stateName>Confiabilidade alta?</stateName>
+      <stateDescription>Confiabilidade alta?</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>260</positionX>
+      <positionY>219</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <sequence>8</sequence>
+      </processStatePK>
+      <stateName>Muda Aprovador?</stateName>
+      <stateDescription>Muda Aprovador?</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>1205</positionX>
+      <positionY>212</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <sequence>36</sequence>
+      </processStatePK>
+      <stateName>Aprovado?</stateName>
+      <stateDescription>Aprovado?</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>749</positionX>
+      <positionY>226</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <sequence>45</sequence>
+      </processStatePK>
+      <stateName>Nota Aprovada?</stateName>
+      <stateDescription>Nota Aprovada?</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>1450</positionX>
+      <positionY>211</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <sequence>51</sequence>
+      </processStatePK>
+      <stateName>Aprovado?</stateName>
+      <stateDescription>Aprovado?</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>1860</positionX>
+      <positionY>355</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <sequence>11</sequence>
+      </processStatePK>
+      <stateName>Fim</stateName>
+      <stateDescription>Fim</stateDescription>
+      <instruction>Atividade final do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>1800</positionX>
+      <positionY>127</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>60</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <sequence>38</sequence>
+      </processStatePK>
+      <stateName>Fim</stateName>
+      <stateDescription>Fim</stateDescription>
+      <instruction>Atividade final do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>761</positionX>
+      <positionY>359</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>60</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <sequence>53</sequence>
+      </processStatePK>
+      <stateName>Fim</stateName>
+      <stateDescription>Fim</stateDescription>
+      <instruction>Atividade final do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>1950</positionX>
+      <positionY>387</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>60</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+  </list>
+  <list>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>13</version>
+        <sequence>5</sequence>
+      </conditionProcessStatePK>
+      <condition>!verificaConfiabillidade();</condition>
+      <destinationSequenceId>6</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>13</version>
+        <sequence>5</sequence>
+      </conditionProcessStatePK>
+      <condition>isFilaFilial();</condition>
+      <destinationSequenceId>13</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <expressionOrder>3</expressionOrder>
+        <version>13</version>
+        <sequence>5</sequence>
+      </conditionProcessStatePK>
+      <condition>verificaAprovacaoNota();</condition>
+      <destinationSequenceId>7</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <expressionOrder>4</expressionOrder>
+        <version>13</version>
+        <sequence>5</sequence>
+      </conditionProcessStatePK>
+      <condition>true;</condition>
+      <destinationSequenceId>6</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>13</version>
+        <sequence>8</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;aprovacao&quot;) == &quot;mudar_aprovador&quot;</condition>
+      <destinationSequenceId>7</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>13</version>
+        <sequence>8</sequence>
+      </conditionProcessStatePK>
+      <condition>true</condition>
+      <destinationSequenceId>45</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>13</version>
+        <sequence>36</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;aprovacao&quot;) == &quot;nao&quot;</condition>
+      <destinationSequenceId>38</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>13</version>
+        <sequence>36</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;tipo_aprovador&quot;) == &quot;filial&quot;</condition>
+      <destinationSequenceId>13</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <expressionOrder>3</expressionOrder>
+        <version>13</version>
+        <sequence>36</sequence>
+      </conditionProcessStatePK>
+      <condition>true</condition>
+      <destinationSequenceId>7</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>13</version>
+        <sequence>45</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;aprovacao&quot;) == &quot;sim&quot;</condition>
+      <destinationSequenceId>9</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>13</version>
+        <sequence>45</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;aprovacao&quot;) == &quot;nao&quot;</condition>
+      <destinationSequenceId>49</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>13</version>
+        <sequence>51</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;aprovacao&quot;) == &quot;nao&quot;</condition>
+      <destinationSequenceId>53</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>13</version>
+        <sequence>51</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&quot;tipo_aprovador&quot;) == &quot;filial&quot;</condition>
+      <destinationSequenceId>13</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <expressionOrder>3</expressionOrder>
+        <version>13</version>
+        <sequence>51</sequence>
+      </conditionProcessStatePK>
+      <condition>true</condition>
+      <destinationSequenceId>7</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+  </list>
+  <list>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <linkSequence>20</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>7</initialStateSequence>
+      <finalStateSequence>8</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <linkSequence>23</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>9</initialStateSequence>
+      <finalStateSequence>11</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <linkSequence>24</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>5</initialStateSequence>
+      <finalStateSequence>13</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Não</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <linkSequence>25</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>5</initialStateSequence>
+      <finalStateSequence>7</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Sim</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <linkSequence>26</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>5</initialStateSequence>
+      <finalStateSequence>6</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Não</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <linkSequence>30</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>10</initialStateSequence>
+      <finalStateSequence>9</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <linkSequence>37</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>36</initialStateSequence>
+      <finalStateSequence>7</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <linkSequence>39</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>36</initialStateSequence>
+      <finalStateSequence>38</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <linkSequence>40</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>14</initialStateSequence>
+      <finalStateSequence>10</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <linkSequence>44</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>8</initialStateSequence>
+      <finalStateSequence>7</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Sim</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <linkSequence>46</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>8</initialStateSequence>
+      <finalStateSequence>45</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Não</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <linkSequence>47</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>45</initialStateSequence>
+      <finalStateSequence>9</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Aprovado</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <linkSequence>50</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>45</initialStateSequence>
+      <finalStateSequence>49</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>Reprovado</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <linkSequence>52</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>49</initialStateSequence>
+      <finalStateSequence>51</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <linkSequence>54</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>51</initialStateSequence>
+      <finalStateSequence>53</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <linkSequence>55</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>51</initialStateSequence>
+      <finalStateSequence>7</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <linkSequence>58</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>4</initialStateSequence>
+      <finalStateSequence>57</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <linkSequence>59</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>57</initialStateSequence>
+      <finalStateSequence>5</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <linkSequence>62</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>60</initialStateSequence>
+      <finalStateSequence>61</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <linkSequence>63</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>61</initialStateSequence>
+      <finalStateSequence>57</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <linkSequence>64</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>36</initialStateSequence>
+      <finalStateSequence>13</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <linkSequence>65</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>13</initialStateSequence>
+      <finalStateSequence>8</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <linkSequence>66</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>51</initialStateSequence>
+      <finalStateSequence>13</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <linkSequence>72</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>68</initialStateSequence>
+      <finalStateSequence>69</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <linkSequence>73</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>69</initialStateSequence>
+      <finalStateSequence>67</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <linkSequence>74</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>6</initialStateSequence>
+      <finalStateSequence>67</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+        <linkSequence>75</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>67</initialStateSequence>
+      <finalStateSequence>36</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+  </list>
+  <list/>
+  <list>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>servicetask57</eventId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function servicetask57(attempt, message) {&#xd;
+    try{&#xd;
+        var cpfCnpjTomador = new java.lang.String(hAPI.getCardValue(&quot;cpf_tomador&quot;));&#xd;
+        cpfCnpjTomador = cpfCnpjTomador.replaceAll(&quot;[^\\d]&quot;, &quot;&quot;);&#xd;
+&#xd;
+        //var estabelecimento =  getEstabelecimento(cpfCnpjTomador);&#xd;
+        var pedido = hAPI.getCardValue(&quot;numero_pedido&quot;);&#xd;
+        var contrato = hAPI.getCardValue(&quot;contrato&quot;) == &quot;&quot; ? &quot;0&quot; : hAPI.getCardValue(&quot;contrato&quot;);&#xd;
+        var cnpjFornecedor = hAPI.getCardValue(&quot;cpf_prestador&quot;);&#xd;
+&#xd;
+        var cstEmpresa = DatasetFactory.createConstraint(&quot;empresa&quot;, cpfCnpjTomador, cpfCnpjTomador, ConstraintType.MUST);&#xd;
+        var cstEstabelecimento = DatasetFactory.createConstraint(&quot;estabelecimento&quot;, cpfCnpjTomador, cpfCnpjTomador, ConstraintType.MUST);&#xd;
+        var cstPedido = DatasetFactory.createConstraint(&quot;pedido&quot;, pedido, pedido, ConstraintType.MUST);&#xd;
+        var cstContrato = DatasetFactory.createConstraint(&quot;contrato&quot;, contrato, contrato, ConstraintType.MUST);&#xd;
+        var cstCnpjFornecedor = DatasetFactory.createConstraint(&quot;cnpjFornecedor&quot;, cnpjFornecedor, cnpjFornecedor, ConstraintType.MUST);&#xd;
+        var constraintsDatasul = [cstEmpresa, cstEstabelecimento, cstPedido, cstContrato, cstCnpjFornecedor];&#xd;
+&#xd;
+        setAprovador(constraintsDatasul);&#xd;
+        setItems(constraintsDatasul);&#xd;
+        isFilaFilial();&#xd;
+&#xd;
+    }catch(error){&#xd;
+        throw error;&#xd;
+    }&#xd;
+    return true;&#xd;
+}&#xd;
+&#xd;
+function getEstabelecimento(cpfCnpjTomador){&#xd;
+    &#xd;
+    var cstActive = DatasetFactory.createConstraint(&quot;metadata#active&quot;, true, true, ConstraintType.MUST);&#xd;
+    var dsFilialGrupo = DatasetFactory.getDataset(&quot;ds_cadastroFilialGrupo&quot;, null, [cstActive], null);&#xd;
+&#xd;
+    if(dsFilialGrupo.rowsCount == 0){&#xd;
+        return &quot;&quot;;&#xd;
+    }&#xd;
+&#xd;
+    var docId = dsFilialGrupo.getValue(0, &quot;documentid&quot;);&#xd;
+&#xd;
+    var cstActive = DatasetFactory.createConstraint(&quot;metadata#active&quot;, true, true, ConstraintType.MUST);&#xd;
+    var cstTable = DatasetFactory.createConstraint(&quot;tablename&quot;, &quot;table_filial_grupo&quot;, &quot;table_filial_grupo&quot;, ConstraintType.MUST);&#xd;
+    var cstDocId = DatasetFactory.createConstraint(&quot;documentid&quot;, docId, docId, ConstraintType.MUST);&#xd;
+    var dsTableFilialGrupo = DatasetFactory.getDataset(&quot;ds_cadastroFilialGrupo&quot;, null, [cstActive, cstDocId, cstTable], null);&#xd;
+&#xd;
+    if(dsTableFilialGrupo.rowsCount == 0){&#xd;
+        return &quot;&quot;;&#xd;
+    }&#xd;
+&#xd;
+    for(var i = 0; i &lt; dsTableFilialGrupo.rowsCount; i++){&#xd;
+        var cpfCnpjTable = new java.lang.String(dsTableFilialGrupo.getValue(i, &quot;cpf_cnpj&quot;));&#xd;
+        cpfCnpjTable = cpfCnpjTable.replaceAll(&quot;[^\\d]&quot;, &quot;&quot;);&#xd;
+        if(cpfCnpjTable == cpfCnpjTomador){&#xd;
+            return dsTableFilialGrupo.getValue(i, &quot;estabelecimento&quot;);&#xd;
+        }&#xd;
+    }&#xd;
+&#xd;
+    return &quot;&quot;;&#xd;
+}&#xd;
+&#xd;
+function setAprovador(constraintsDatasul){&#xd;
+    var dsAprovador = DatasetFactory.getDataset(&quot;dsAprovadorDatasul&quot;, null, constraintsDatasul, null);&#xd;
+    if(dsAprovador.rowsCount &gt; 0){&#xd;
+        if(dsAprovador.getValue(0, &quot;ERRO&quot;)){&#xd;
+            throw &quot;Erro datasul: &quot; + dsAprovador.getValue(0, &quot;ERRO&quot;);&#xd;
+        }&#xd;
+        var userDatasul = dsAprovador.getValue(0, &quot;user&quot;);&#xd;
+        var cstUser = DatasetFactory.createConstraint(&quot;login&quot;, userDatasul, userDatasul, ConstraintType.MUST);&#xd;
+        var dsColleague = DatasetFactory.getDataset(&quot;colleague&quot;, null, [cstUser], null);&#xd;
+        if(dsColleague.rowsCount &gt; 0){&#xd;
+            var user = dsColleague.getValue(0, &quot;colleaguePK.colleagueId&quot;);&#xd;
+            var name = dsColleague.getValue(0, &quot;colleagueName&quot;);&#xd;
+            hAPI.setCardValue(&quot;aprovador&quot;, user);&#xd;
+            hAPI.setCardValue(&quot;usuario_aprovador_cod&quot;, user)&#xd;
+            hAPI.setCardValue(&quot;usuario_aprovador_name&quot;, name);&#xd;
+            hAPI.setCardValue(&quot;tipo_aprovador&quot;, &quot;matriz&quot;);&#xd;
+        }&#xd;
+    }&#xd;
+}&#xd;
+&#xd;
+function setItems(constraintsDatasul){&#xd;
+    var dsItems = DatasetFactory.getDataset(&quot;dsItemsPedidoDatasul&quot;, null, constraintsDatasul, null);&#xd;
+    log.info(&quot;chamou items-----&quot;)&#xd;
+    if(dsItems.rowsCount &gt; 0){&#xd;
+        if(dsItems.getValue(0, &quot;ERRO&quot;)){&#xd;
+            throw &quot;Erro datasul: &quot; + dsItems.getValue(0, &quot;ERRO&quot;);&#xd;
+        }&#xd;
+        var contrato = dsItems.getValue(0, &quot;contrato&quot;);&#xd;
+        hAPI.setCardValue(&quot;contrato&quot;, contrato);&#xd;
+        for(var i = 0; i &lt; dsItems.rowsCount; i++){&#xd;
+            log.info(&quot;adicioanando items-----&quot;)&#xd;
+            var childData = new java.util.HashMap();&#xd;
+            childData.put(&quot;codigo_item&quot;, dsItems.getValue(i, &quot;codigoItem&quot;));&#xd;
+            log.info(&quot;adicioanando items1-----&quot;)&#xd;
+            childData.put(&quot;descricao_item&quot;, dsItems.getValue(i, &quot;descricaoItem&quot;));&#xd;
+            log.info(&quot;adicioanando items2-----&quot;)&#xd;
+            childData.put(&quot;numero_ordem&quot;, dsItems.getValue(i, &quot;numeroOrdem&quot;));&#xd;
+            log.info(&quot;adicioanando items3-----&quot;)&#xd;
+            childData.put(&quot;centro_custo&quot;, dsItems.getValue(i, &quot;centroCusto&quot;));&#xd;
+            log.info(&quot;adicioanando items4-----&quot;)&#xd;
+            childData.put(&quot;conta_contabil&quot;, dsItems.getValue(i, &quot;contaContabil&quot;));&#xd;
+            log.info(&quot;adicioanando items5-----&quot;)&#xd;
+            childData.put(&quot;cod_unidade_item&quot;, dsItems.getValue(i, &quot;codigoUnidade&quot;));&#xd;
+            log.info(&quot;adicioanando items6-----&quot;)&#xd;
+            childData.put(&quot;quantidade_item&quot;, &quot;1&quot;);&#xd;
+            var precoUnitario = dsItems.getValue(i, &quot;precoUnitario&quot;)&#xd;
+            var floatPrecoUnitario = java.lang.Float.parseFloat(precoUnitario);&#xd;
+            childData.put(&quot;preco_item&quot;, formatMoney(floatPrecoUnitario));            &#xd;
+            log.info(&quot;adicioanando items9-----&quot;)&#xd;
+            hAPI.addCardChild(&quot;tb_items&quot;, childData);&#xd;
+            log.info(&quot;adicionou items-----&quot;)&#xd;
+        }       &#xd;
+        var nota = hAPI.getCardValue(&quot;valor_total_nota&quot;);&#xd;
+        var datasulPrice = dsItems.getValue(0, &quot;precoUnitario&quot;) &#xd;
+        var floatDatasulPrice = java.lang.Float.parseFloat(datasulPrice);&#xd;
+        if(formatMoney(floatDatasulPrice) != nota){&#xd;
+            hAPI.setCardValue(&quot;hasValidItems&quot;, &quot;false&quot;);&#xd;
+        }&#xd;
+    }&#xd;
+}&#xd;
+&#xd;
+function formatMoney(decimal){&#xd;
+    var brLocale = new java.util.Locale(&quot;pt&quot;, &quot;BR&quot;);&#xd;
+    var brFormat = java.text.NumberFormat.getCurrencyInstance(brLocale);&#xd;
+    var formatedValue = brFormat.format(decimal);&#xd;
+    var value = formatedValue.replaceAll(&quot;[^0-9.,]&quot;, &quot;&quot;);&#xd;
+    return value;&#xd;
+}&#xd;
+&#xd;
+function formatDecimal(string){&#xd;
+    var javaString = new java.lang.String(string);&#xd;
+    javaString = javaString.replaceAll(&quot;[^0-9.,]&quot;, &quot;&quot;);&#xd;
+	javaString = javaString.replace(&quot;.&quot;, &quot;&quot;);&#xd;
+	javaString = javaString.replace(&quot;,&quot;, &quot;.&quot;);&#xd;
+	return javaString;&#xd;
+}&#xd;
+</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>afterStateEntry</eventId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function afterStateEntry(sequenceId){&#xd;
+    if(sequenceId == 36){&#xd;
+        var notaFileId = hAPI.getCardValue(&quot;anexo_nota_id&quot;);        &#xd;
+        var boletoFiles = getBoletoFiles();&#xd;
+        if(notaFileId){&#xd;
+            log.info(&quot;deltedando nota ---------&quot;);&#xd;
+            fluigAPI.getDocumentService().deleteDocument(parseInt(notaFileId));&#xd;
+            hAPI.setCardValue(&quot;anexo_nota_id&quot;, &quot;&quot;);&#xd;
+            hAPI.setCardValue(&quot;anexo_nota_name&quot;, &quot;&quot;);&#xd;
+        }&#xd;
+        if(boletoFiles.length &gt; 0){&#xd;
+            boletoFiles.forEach(function(boletoFile) {&#xd;
+                var boletoFileId = boletoFile.id;&#xd;
+                fluigAPI.getDocumentService().deleteDocument(parseInt(boletoFileId));&#xd;
+            });&#xd;
+            log.info(&quot;deletou boletos----------&quot;)            &#xd;
+        }        &#xd;
+    }&#xd;
+}&#xd;
+function getBoletoFiles(){&#xd;
+    var boletoFiles = [];&#xd;
+    var docId = getValue(&quot;WKCardId&quot;);&#xd;
+    var cstActive = DatasetFactory.createConstraint(&quot;metadata#active&quot;, true, true, ConstraintType.MUST);&#xd;
+    var cstTable = DatasetFactory.createConstraint(&quot;tablename&quot;, &quot;tb_anexos_boleto&quot;, &quot;tb_anexos_boleto&quot;, ConstraintType.MUST);&#xd;
+    var cstDocId = DatasetFactory.createConstraint(&quot;documentid&quot;, docId, docId, ConstraintType.MUST);&#xd;
+    var dsTableBoletoAnexos = DatasetFactory.getDataset(&quot;ds_lancamentoNotas&quot;, null, [cstActive, cstDocId, cstTable], null);&#xd;
+    for(var i = 0; i &lt; dsTableBoletoAnexos.rowsCount; i++){&#xd;
+        var boletoFileId = dsTableBoletoAnexos.getValue(i, &quot;anexo_boleto_id&quot;);&#xd;
+        var boletoFileName = dsTableBoletoAnexos.getValue(i, &quot;anexo_boleto_name&quot;);&#xd;
+        boletoFiles.push({&#xd;
+            id: boletoFileId,&#xd;
+            name: boletoFileName&#xd;
+        });&#xd;
+    }&#xd;
+    return boletoFiles;&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>beforeTaskSave</eventId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function beforeTaskSave(colleagueId,nextSequenceId,userList){&#xd;
+&#xd;
+    try{&#xd;
+        var atividade = getValue(&quot;WKNumState&quot;);&#xd;
+&#xd;
+        var cpfCnpjTomador = new java.lang.String(hAPI.getCardValue(&quot;cpf_tomador&quot;));&#xd;
+        cpfCnpjTomador = cpfCnpjTomador.replaceAll(&quot;[^\\d]&quot;, &quot;&quot;);&#xd;
+        hAPI.setCardValue(&quot;cpf_tomador&quot;, cpfCnpjTomador);&#xd;
+    &#xd;
+        var cpfCnpPrestador = new java.lang.String(hAPI.getCardValue(&quot;cpf_prestador&quot;));&#xd;
+        cpfCnpPrestador = cpfCnpPrestador.replaceAll(&quot;[^\\d]&quot;, &quot;&quot;);&#xd;
+        hAPI.setCardValue(&quot;cpf_prestador&quot;, cpfCnpPrestador);&#xd;
+&#xd;
+        var valorNota = hAPI.getCardValue(&quot;valor_total_nota&quot;);&#xd;
+        hAPI.setCardValue(&quot;valor_total_nota&quot;, handleMoneyFormat(valorNota));&#xd;
+&#xd;
+        var valorDeducoes = hAPI.getCardValue(&quot;valor_total_deducoes&quot;);&#xd;
+        hAPI.setCardValue(&quot;valor_total_deducoes&quot;, handleMoneyFormat(valorDeducoes));&#xd;
+&#xd;
+        var baseCalculo = hAPI.getCardValue(&quot;base_calculo&quot;);&#xd;
+        hAPI.setCardValue(&quot;base_calculo&quot;, handleMoneyFormat(baseCalculo));&#xd;
+&#xd;
+        var aliquota = hAPI.getCardValue(&quot;aliquota&quot;);&#xd;
+        hAPI.setCardValue(&quot;aliquota&quot;, handleMoneyFormat(aliquota));&#xd;
+&#xd;
+        var valorIss = hAPI.getCardValue(&quot;valor_iss&quot;);&#xd;
+        hAPI.setCardValue(&quot;valor_iss&quot;, handleMoneyFormat(valorIss));&#xd;
+&#xd;
+        var inss = hAPI.getCardValue(&quot;inss&quot;);&#xd;
+        hAPI.setCardValue(&quot;inss&quot;, handleMoneyFormat(inss));&#xd;
+&#xd;
+        var irrf = hAPI.getCardValue(&quot;irrf&quot;);&#xd;
+        hAPI.setCardValue(&quot;irrf&quot;, handleMoneyFormat(irrf));&#xd;
+&#xd;
+        var csll = hAPI.getCardValue(&quot;csll&quot;);&#xd;
+        hAPI.setCardValue(&quot;csll&quot;, handleMoneyFormat(csll));&#xd;
+&#xd;
+        var cofins = hAPI.getCardValue(&quot;cofins&quot;);&#xd;
+        hAPI.setCardValue(&quot;cofins&quot;, handleMoneyFormat(cofins));&#xd;
+&#xd;
+        var pis_pasep = hAPI.getCardValue(&quot;pis_pasep&quot;);&#xd;
+        hAPI.setCardValue(&quot;pis_pasep&quot;, handleMoneyFormat(pis_pasep));&#xd;
+&#xd;
+        handleWrongData();&#xd;
+&#xd;
+&#xd;
+        if(&#xd;
+            atividade == 13 ||&#xd;
+            atividade == 7 ||&#xd;
+            atividade == 49 ||&#xd;
+            atividade == 6&#xd;
+        )&#xd;
+        if(hAPI.getCardValue(&quot;aprovacao&quot;) != &quot;&quot;){&#xd;
+            var atividadeName = &quot;&quot;;&#xd;
+            if(atividade == 13){&#xd;
+                atividadeName = &quot;Fila das Filiais&quot;;&#xd;
+            }else if(atividade == 7){&#xd;
+                atividadeName = &quot;Aprovação da Nota&quot;;&#xd;
+            }else if(atividade == 49){&#xd;
+                atividadeName = &quot;Curadoria Aprovação&quot;;&#xd;
+            }else if(atividade == 6){&#xd;
+                atividadeName = &quot;Curadoria Manual&quot;;&#xd;
+            }&#xd;
+            var decisao = hAPI.getCardValue(&quot;aprovacao&quot;) == &quot;sim&quot; ? &quot;Aprovado&quot; : hAPI.getCardValue(&quot;aprovacao&quot;) == &quot;nao&quot; ? &quot;Reprovado&quot; : &quot;Mudança de Aprovador&quot;;&#xd;
+            var colleagueName = fluigAPI.getUserService().getCurrent().getFullName();&#xd;
+            var formato = new java.text.SimpleDateFormat(&apos;dd/MM/yyyy HH:mm:ss&apos;);&#xd;
+            var dataMudanca = formato.format(new java.util.Date());&#xd;
+            var motivo = hAPI.getCardValue(&quot;motivo_reprovado&quot;);&#xd;
+            var historico = hAPI.getCardValue(&quot;historico_observacoes&quot;) + &quot;&lt;b&gt;[&quot; + dataMudanca + &quot;] &quot; + atividadeName + &quot; - &quot; + colleagueName + &quot;&lt;/b&gt;: &quot; + decisao;&#xd;
+            historico += motivo == &quot;&quot; ? &quot;&lt;br&gt;&quot; : &quot; - &quot; + motivo + &quot;&lt;br&gt;&quot;;&#xd;
+            hAPI.setCardValue(&quot;historico_observacoes&quot;, historico);&#xd;
+            hAPI.setCardValue(&quot;motivo_reprovado&quot;, &quot;&quot;);&#xd;
+        }&#xd;
+&#xd;
+        if(atividade == 5){&#xd;
+            verificaNotaDuplicada();&#xd;
+        }&#xd;
+&#xd;
+        if(nextSequenceId == 5){&#xd;
+            // isFilaFilial();&#xd;
+            // var cnpjEmpresa = hAPI.getCardValue(&quot;cpf_tomador&quot;);&#xd;
+            // var cadastroData = getCadastroData(cnpjEmpresa);&#xd;
+            // hAPI.setCardValue(&quot;natureza_operacao_codigo&quot;, cadastroData.naturezaOperacao);&#xd;
+            // hAPI.setCardValue(&quot;estabelecimento&quot;, cadastroData.estabelecimento);&#xd;
+        }&#xd;
+&#xd;
+        if(atividade == 45 &amp;&amp; nextSequenceId == 9){&#xd;
+            if(hAPI.getCardValue(&quot;anexos_erp&quot;) != &quot;&quot;){&#xd;
+                var jsonAttachmentsNames = JSON.parse(hAPI.getCardValue(&quot;anexos_erp&quot;));&#xd;
+                if(&#xd;
+                    (jsonAttachmentsNames.bol.length &gt; 0 || jsonAttachmentsNames.nfse.length &gt; 0) &amp;&amp;&#xd;
+                    hAPI.listAttachments().size() &gt; 0&#xd;
+                ){&#xd;
+                    var processAttachmentFolder = createProcessAttachmentFolder();&#xd;
+                    if(processAttachmentFolder){&#xd;
+                        sendProcessAttachToGed(processAttachmentFolder);&#xd;
+                    }&#xd;
+                }&#xd;
+            }&#xd;
+        }&#xd;
+    }catch(error){&#xd;
+        log.info(&quot;ERRO BEFORE TASK SAVE LANCAMENTO NFS ----------&quot;);&#xd;
+        log.dir(error);&#xd;
+    }    &#xd;
+&#xd;
+}&#xd;
+&#xd;
+function createProcessAttachmentFolder(){&#xd;
+    try {&#xd;
+        var processFolderId = getProcessFolderId();&#xd;
+        var processId = getValue(&quot;WKNumProces&quot;);&#xd;
+        var cnpjTomador = hAPI.getCardValue(&quot;cpf_tomador&quot;);&#xd;
+        var cnpjPrestador = hAPI.getCardValue(&quot;cpf_prestador&quot;);&#xd;
+        var dto = docAPI.newDocumentDto();&#xd;
+        dto.setDocumentDescription(&quot;Tomador: &quot; + cnpjTomador + &quot; - Prestador: &quot; + cnpjPrestador  + &quot; - Solicitação: &quot; + processId);&#xd;
+        dto.setDocumentType(&quot;1&quot;);&#xd;
+        dto.setParentDocumentId(parseInt(processFolderId));&#xd;
+        dto.setDocumentTypeId(&quot;&quot;);&#xd;
+        var folder = docAPI.createFolder(dto, null, null);&#xd;
+        return folder.getDocumentId();&#xd;
+    } catch (error) {&#xd;
+        log.info(&quot;Erro create attachement-------&quot;);&#xd;
+        log.dir(error);&#xd;
+    }&#xd;
+}&#xd;
+&#xd;
+function getProcessFolderId(){&#xd;
+    var dsConfigLancamentoNFS = DatasetFactory.getDataset(&quot;dsConfigLancamentoNFS&quot;, null, null, null);&#xd;
+    return dsConfigLancamentoNFS.getValue(0, &quot;notasBoletosDefinitiveFolderId&quot;);&#xd;
+}&#xd;
+&#xd;
+function sendProcessAttachToGed(processAttachmentFolder){&#xd;
+    var calendar = java.util.Calendar.getInstance().getTime();&#xd;
+    var docs = hAPI.listAttachments();&#xd;
+    var jsonAttachmentsNames = JSON.parse(hAPI.getCardValue(&quot;anexos_erp&quot;));&#xd;
+    for (var i = 0; i &lt; docs.size(); i++) {&#xd;
+        var doc = docs.get(i);&#xd;
+        &#xd;
+        if (doc.getDocumentType() != &quot;7&quot;) {&#xd;
+            continue;&#xd;
+        }&#xd;
+&#xd;
+        if(&#xd;
+            jsonAttachmentsNames.bol.indexOf(String(doc.getDocumentDescription())) == -1 &amp;&amp; &#xd;
+            jsonAttachmentsNames.nfse.indexOf(String(doc.getDocumentDescription())) == -1 &#xd;
+        ){&#xd;
+            continue;&#xd;
+        }&#xd;
+        &#xd;
+        doc.setParentDocumentId(processAttachmentFolder);&#xd;
+        doc.setVersionDescription(&quot;Processo: &quot; + getValue(&quot;WKNumProces&quot;));&#xd;
+        doc.setExpires(false);&#xd;
+        doc.setCreateDate(calendar);&#xd;
+        doc.setInheritSecurity(true);&#xd;
+        doc.setTopicId(1);&#xd;
+        doc.setUserNotify(false);&#xd;
+        doc.setValidationStartDate(calendar);&#xd;
+        doc.setVersionOption(&quot;0&quot;);&#xd;
+        doc.setUpdateIsoProperties(true);&#xd;
+        &#xd;
+        hAPI.publishWorkflowAttachment(doc);&#xd;
+    }&#xd;
+}&#xd;
+&#xd;
+&#xd;
+function handleMoneyFormat(string){&#xd;
+    var javaString = new java.lang.String(string);&#xd;
+    javaString = javaString.replaceAll(&quot;[^0-9.,]&quot;, &quot;&quot;);&#xd;
+	return javaString;&#xd;
+}&#xd;
+&#xd;
+function verificaNotaDuplicada(){&#xd;
+    var numNota = hAPI.getCardValue(&quot;numero_nota&quot;);&#xd;
+    var cnpjFornecedor = hAPI.getCardValue(&quot;cpf_prestador&quot;);&#xd;
+    var docId = getValue(&quot;WKCardId&quot;);&#xd;
+    var serverUrl = fluigAPI.getPageService().getServerURL();&#xd;
+&#xd;
+    log.info(&quot;TESTE DS adnt lancamento-------------------&quot;);&#xd;
+    log.dir(numNota);&#xd;
+    log.dir(cnpjFornecedor);&#xd;
+    log.dir(docId);&#xd;
+&#xd;
+    var cstNumNota = DatasetFactory.createConstraint(&quot;numero_nota&quot;, numNota, numNota, ConstraintType.MUST);&#xd;
+    var cstCnpj = DatasetFactory.createConstraint(&quot;cpf_prestador&quot;, cnpjFornecedor, cnpjFornecedor, ConstraintType.MUST);&#xd;
+    var cstDocId = DatasetFactory.createConstraint(&quot;documentid&quot;, docId.toString(), docId.toString(), ConstraintType.MUST_NOT);&#xd;
+    var dsLancamentoNFS = DatasetFactory.getDataset(&quot;ds_lancamentoNotas&quot;, null, [cstNumNota, cstCnpj, cstDocId], null);&#xd;
+    log.info(&quot;TESTE DS lancamento-------------------&quot;);&#xd;
+    var notaHistory = &quot;&quot;;&#xd;
+&#xd;
+    if(!dsLancamentoNFS){&#xd;
+        return;&#xd;
+    }&#xd;
+&#xd;
+    for(var i = 0; i &lt; dsLancamentoNFS.rowsCount; i++){&#xd;
+        log.info(&quot;TESTE DS-------------------&quot;);&#xd;
+        var processId = dsLancamentoNFS.getValue(i, &quot;numero_processo&quot;);&#xd;
+        var cstWorkflowProcessId = DatasetFactory.createConstraint(&quot;workflowProcessPK.processInstanceId&quot;, processId, processId, ConstraintType.MUST);&#xd;
+        var dsWorkflowProcess = DatasetFactory.getDataset(&quot;workflowProcess&quot;, null, [cstWorkflowProcessId], null);&#xd;
+        var status = dsWorkflowProcess.getValue(0, &quot;status&quot;);&#xd;
+        if(status == &quot;2&quot;){&#xd;
+            notaHistory += &quot;Solicitação &lt;a target=\&quot;_blank\&quot; href=\&quot;&quot; + serverUrl + &quot;/portal/p/INPEV/pageworkflowview?app_ecm_workflowview_detailsProcessInstanceID=&quot; + processId + &quot;\&quot; class=\&quot;link-default\&quot;&gt;&lt;b&gt;&quot; + processId + &quot;&lt;/b&gt;&lt;/a&gt; Referente a essa nota está &lt;b&gt;Finalizada(integrada)!&lt;/b&gt;&lt;br&gt;&quot;;&#xd;
+        }else if(status == &quot;1&quot;){&#xd;
+            notaHistory += &quot;Solicitação &lt;a target=\&quot;_blank\&quot; href=\&quot;&quot; + serverUrl + &quot;/portal/p/INPEV/pageworkflowview?app_ecm_workflowview_detailsProcessInstanceID=&quot; + processId + &quot;\&quot; class=\&quot;link-default\&quot;&gt;&lt;b&gt;&quot; + processId + &quot;&lt;/b&gt;&lt;/a&gt; Referente a essa nota está &lt;b&gt;Cancelada!&lt;/b&gt;&lt;br&gt;&quot;;&#xd;
+        }else{&#xd;
+            var cstHistoryProcessId = DatasetFactory.createConstraint(&quot;processHistoryPK.processInstanceId&quot;, processId, processId, ConstraintType.MUST);&#xd;
+            var cstActive = DatasetFactory.createConstraint(&quot;active&quot;, true, true, ConstraintType.MUST);&#xd;
+            var dsProcessHistory = DatasetFactory.getDataset(&quot;processHistory&quot;, null, [cstHistoryProcessId, cstActive], null);&#xd;
+            log.info(&quot;TESTE DS2-------------------&quot;);&#xd;
+            log.dir(dsProcessHistory)&#xd;
+            var actualActivitie = dsProcessHistory.getValue(0, &quot;stateSequence&quot;);&#xd;
+            notaHistory += &quot;Solicitação &lt;a target=\&quot;_blank\&quot; href=\&quot;&quot; + serverUrl + &quot;/portal/p/INPEV/pageworkflowview?app_ecm_workflowview_detailsProcessInstanceID=&quot; + processId + &quot;\&quot; class=\&quot;link-default\&quot;&gt;&lt;b&gt;&quot; + processId + &quot;&lt;/b&gt;&lt;/a&gt; Referente a essa nota está na atividade &lt;b&gt;&quot; + ENVIRONMENT.activitiesNumberToNameMap[actualActivitie] + &quot;!&lt;/b&gt;&lt;br&gt;&quot; ;&#xd;
+        }&#xd;
+    }&#xd;
+&#xd;
+    hAPI.setCardValue(&quot;nota_history&quot;, notaHistory);&#xd;
+}&#xd;
+&#xd;
+function getCadastroData(cnpjEmpresa){&#xd;
+	var data = {&#xd;
+		estabelecimento: &quot;&quot;,&#xd;
+		naturezaOperacao: &quot;&quot;&#xd;
+	}&#xd;
+&#xd;
+	var cstActive = DatasetFactory.createConstraint(&quot;metadata#active&quot;, true, true, ConstraintType.MUST);&#xd;
+    var dsFilialGrupo = DatasetFactory.getDataset(&quot;ds_cadastroFilialGrupo&quot;, null, [cstActive], null);&#xd;
+&#xd;
+    if(dsFilialGrupo.rowsCount == 0){        &#xd;
+        return data;&#xd;
+    }&#xd;
+&#xd;
+    var docId = dsFilialGrupo.getValue(0, &quot;documentid&quot;);&#xd;
+&#xd;
+    var cstActive = DatasetFactory.createConstraint(&quot;metadata#active&quot;, true, true, ConstraintType.MUST);&#xd;
+    var cstTable = DatasetFactory.createConstraint(&quot;tablename&quot;, &quot;table_filial_grupo&quot;, &quot;table_filial_grupo&quot;, ConstraintType.MUST);&#xd;
+    var cstDocId = DatasetFactory.createConstraint(&quot;documentid&quot;, docId, docId, ConstraintType.MUST);&#xd;
+    var dsTableFilialGrupo = DatasetFactory.getDataset(&quot;ds_cadastroFilialGrupo&quot;, null, [cstActive, cstDocId, cstTable], null);&#xd;
+&#xd;
+    if(dsTableFilialGrupo.rowsCount == 0){&#xd;
+        return data;&#xd;
+    }&#xd;
+&#xd;
+    for(var i = 0; i &lt; dsTableFilialGrupo.rowsCount; i++){&#xd;
+        var cpfCnpjTable = new java.lang.String(dsTableFilialGrupo.getValue(i, &quot;cpf_cnpj&quot;));&#xd;
+        cpfCnpjTable = cpfCnpjTable.replaceAll(&quot;[^\\d]&quot;, &quot;&quot;);&#xd;
+        if(cpfCnpjTable == cnpjEmpresa){&#xd;
+            var estadoNota = hAPI.getCardValue(&quot;uf_prestador&quot;);&#xd;
+            var estadoEstabelecimento = dsTableFilialGrupo.getValue(i, &quot;estado&quot;);&#xd;
+            if(estadoNota == estadoEstabelecimento){&#xd;
+                data.naturezaOperacao = dsTableFilialGrupo.getValue(i, &quot;cfop_estadual&quot;);&#xd;
+            }else{&#xd;
+                data.naturezaOperacao = dsTableFilialGrupo.getValue(i, &quot;cfop_interestadual&quot;);&#xd;
+            }&#xd;
+			data.estabelecimento = dsTableFilialGrupo.getValue(i, &quot;estabelecimento&quot;);&#xd;
+            return data;&#xd;
+        }&#xd;
+    }&#xd;
+&#xd;
+    return data;&#xd;
+}&#xd;
+&#xd;
+function handleWrongData(){&#xd;
+    try{&#xd;
+        var dataEmissao = hAPI.getCardValue(&quot;data_emissao&quot;);        &#xd;
+        if(dataEmissao.indexOf(&quot;-&quot;) &gt; 0){&#xd;
+            var comingFormat = new java.text.SimpleDateFormat(&quot;yyyy-MM-dd&quot;);&#xd;
+            var brFormat = new java.text.SimpleDateFormat(&quot;dd/MM/yyyy&quot;);&#xd;
+            var dataEmissaoDate = new java.util.Date(comingFormat.parse(dataEmissao).getTime());&#xd;
+            var dataEmissaoFormated = brFormat.format(dataEmissaoDate);&#xd;
+            hAPI.setCardValue(&quot;data_emissao&quot;, dataEmissaoFormated);&#xd;
+        }&#xd;
+    }catch(error){&#xd;
+        log.info(&quot;handleWrongData ------------------------------------&quot;);&#xd;
+        log.dir(error);&#xd;
+    }    &#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>isFilaFilial</eventId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function isFilaFilial(){&#xd;
+    var cstActive = DatasetFactory.createConstraint(&quot;metadata#active&quot;, true, true, ConstraintType.MUST);&#xd;
+    var dsFilialGrupo = DatasetFactory.getDataset(&quot;ds_cadastroFilialGrupo&quot;, null, [cstActive], null);&#xd;
+&#xd;
+    if(dsFilialGrupo.rowsCount == 0){&#xd;
+        return false;&#xd;
+    }&#xd;
+&#xd;
+    var docId = dsFilialGrupo.getValue(0, &quot;documentid&quot;);&#xd;
+&#xd;
+    var cstActive = DatasetFactory.createConstraint(&quot;metadata#active&quot;, true, true, ConstraintType.MUST);&#xd;
+    var cstTable = DatasetFactory.createConstraint(&quot;tablename&quot;, &quot;table_filial_grupo&quot;, &quot;table_filial_grupo&quot;, ConstraintType.MUST);&#xd;
+    var cstDocId = DatasetFactory.createConstraint(&quot;documentid&quot;, docId, docId, ConstraintType.MUST);&#xd;
+    var dsTableFilialGrupo = DatasetFactory.getDataset(&quot;ds_cadastroFilialGrupo&quot;, null, [cstActive, cstDocId, cstTable], null);&#xd;
+&#xd;
+    if(dsTableFilialGrupo.rowsCount == 0){&#xd;
+        return false;&#xd;
+    }&#xd;
+&#xd;
+    var cpfCnpjTomador = new java.lang.String(hAPI.getCardValue(&quot;cpf_tomador&quot;));&#xd;
+    cpfCnpjTomador = cpfCnpjTomador.replaceAll(&quot;[^\\d]&quot;, &quot;&quot;);&#xd;
+    log.info(&quot;DATASETGRUPOFILIALZUIN&quot;)&#xd;
+    log.dir(dsTableFilialGrupo.values)&#xd;
+    for(var i = 0; i &lt; dsTableFilialGrupo.rowsCount; i++){&#xd;
+        var cpfCnpjTable = new java.lang.String(dsTableFilialGrupo.getValue(i, &quot;cpf_cnpj&quot;));&#xd;
+        var estadoNota = new java.lang.String(dsTableFilialGrupo.getValue(i, &quot;estado&quot;));&#xd;
+        var cfop_estadual = new java.lang.String(dsTableFilialGrupo.getValue(i, &quot;cfop_estadual&quot;))&#xd;
+        var cfop_interestadual = new java.lang.String(dsTableFilialGrupo.getValue(i, &quot;cfop_interestadual&quot;))&#xd;
+        cpfCnpjTable = cpfCnpjTable.replaceAll(&quot;[^\\d]&quot;, &quot;&quot;);&#xd;
+        if(cpfCnpjTable == cpfCnpjTomador){&#xd;
+       //Ajustes ZUIN , COMPARAÇÃO PARA VER SE O ESTADO DO PRESTADOR É IGUAL AO QUE ESTA NO FORMULARIO AUXILIAR &#xd;
+       // SE FOR, ELE VAI SETAR O VALOR DE CFOP_ESTADUAL , SE NAO FOR ELE VAI SETAR O CFOP_INTERESTADUAL&#xd;
+            if(hAPI.getCardValue(&quot;uf_prestador&quot;) == estadoNota)&#xd;
+            {&#xd;
+                hAPI.setCardValue(&quot;natureza_operacao&quot; , cfop_estadual)&#xd;
+            }&#xd;
+            else&#xd;
+            {&#xd;
+                hAPI.setCardValue(&quot;natureza_operacao&quot; , cfop_interestadual)&#xd;
+            }&#xd;
+            var grupo = dsTableFilialGrupo.getValue(i, &quot;grupo&quot;);&#xd;
+            if(grupo != &quot;&quot; &amp;&amp; grupo != null){&#xd;
+                hAPI.setCardValue(&quot;aprovador&quot;, &quot;Pool:Group:&quot; + grupo);&#xd;
+                hAPI.setCardValue(&quot;grupo_aprovacao_filial&quot;, grupo);&#xd;
+                hAPI.setCardValue(&quot;tipo_aprovador&quot;, &quot;filial&quot;);&#xd;
+                &#xd;
+                &#xd;
+                return true;&#xd;
+            }else{&#xd;
+                return false;&#xd;
+            }&#xd;
+        }&#xd;
+        else&#xd;
+        {&#xd;
+            &#xd;
+        }&#xd;
+    }&#xd;
+&#xd;
+    return false;&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>servicetask67</eventId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function servicetask67(attempt, message) {        
+
+    var user = &quot;admin&quot;;
+    var password = &quot;adm&quot;;
+    var companyId = getValue(&quot;WKCompany&quot;);
+    var processInstanceId = getValue(&quot;WKNumProces&quot;);
+    var choosedState = 67;
+    var comments = &quot;&quot;;
+    var userId = &quot;admin&quot;;
+    var completeTask = false;
+    var managerMode = true;
+    var threadSequence = 0;
+
+    var notaFileId = hAPI.getCardValue(&quot;anexo_nota_id&quot;);
+    var notaFileName = hAPI.getCardValue(&quot;anexo_nota_name&quot;);
+    var boletoFiles = getBoletoFiles();
+
+    if((notaFileId == &quot;&quot; || notaFileId == null || notaFileId == undefined) &amp;&amp; boletoFiles.length == 0){
+        return true;
+    }
+
+    try{
+        var service = ServiceManager.getService(&apos;ECMWorkflowEngineService&apos;); 		
+		var workflowEngineService = service.instantiate(&apos;com.totvs.technology.ecm.workflow.ws.ECMWorkflowEngineServiceService&apos;);
+        var workflowEngineServicePort = workflowEngineService.getWorkflowEngineServicePort();
+                
+        var appointment = service.instantiate(&apos;com.totvs.technology.ecm.workflow.ws.ProcessTaskAppointmentDtoArray&apos;);
+        var cardData = service.instantiate(&apos;net.java.dev.jaxb.array.StringArrayArray&apos;);
+        var colleagueIds = service.instantiate(&apos;net.java.dev.jaxb.array.StringArray&apos;);
+        var attachments = service.instantiate(&apos;com.totvs.technology.ecm.workflow.ws.ProcessAttachmentDtoArray&apos;);
+
+        log.info(&quot;Instanciou webservices --------&quot;);
+
+        if(notaFileId != &quot;&quot; &amp;&amp; notaFileId != null &amp;&amp; notaFileId != undefined){
+            var notaAttachment = getAttachmentDto(service, notaFileId, notaFileName);                      
+            attachments.getItem().add(notaAttachment);
+        }
+
+        if(boletoFiles.length &gt; 0){
+            boletoFiles.forEach(function(boletoFile) {
+                var boletoFileId = boletoFile.id;
+                var boletoFileName = boletoFile.name;
+                var boletoAttachment = getAttachmentDto(service, boletoFileId, boletoFileName);
+                attachments.getItem().add(boletoAttachment);
+            });
+        }
+
+        log.info(&quot;Chamando save and send task ---------&quot;);
+
+        var result = workflowEngineServicePort.saveAndSendTask(
+            user, 
+            password, 
+            companyId, 
+            processInstanceId, 
+            choosedState, 
+            colleagueIds, 
+            comments, 
+            userId, 
+            completeTask,
+            attachments,
+            cardData,
+            appointment,
+            managerMode,
+            threadSequence
+        );
+
+        log.info(&quot;Chamou save and send task -----------&quot;);
+
+        if(result.getItem().get(0).getItem().get(0).indexOf(&quot;ERROR&quot;) &gt; -1){
+            throw result.getItem().get(0).getItem().get(1);
+        }
+                
+    }catch(error){
+        throw error;
+    }
+
+    return true;
+
+}
+
+function getBoletoFiles(){
+    var boletoFiles = [];
+    var docId = getValue(&quot;WKCardId&quot;);
+    var cstActive = DatasetFactory.createConstraint(&quot;metadata#active&quot;, true, true, ConstraintType.MUST);
+    var cstTable = DatasetFactory.createConstraint(&quot;tablename&quot;, &quot;tb_anexos_boleto&quot;, &quot;tb_anexos_boleto&quot;, ConstraintType.MUST);
+    var cstDocId = DatasetFactory.createConstraint(&quot;documentid&quot;, docId, docId, ConstraintType.MUST);
+    var dsTableBoletoAnexos = DatasetFactory.getDataset(&quot;ds_lancamentoNotas&quot;, null, [cstActive, cstDocId, cstTable], null);
+    for(var i = 0; i &lt; dsTableBoletoAnexos.rowsCount; i++){
+        var boletoFileId = dsTableBoletoAnexos.getValue(i, &quot;anexo_boleto_id&quot;);
+        var boletoFileName = dsTableBoletoAnexos.getValue(i, &quot;anexo_boleto_name&quot;);
+        boletoFiles.push({
+            id: boletoFileId,
+            name: boletoFileName
+        });
+    }
+    return boletoFiles;
+}
+
+function getAttachmentDto(service, fileId, fileName){   
+    var fileUrl = fluigAPI.getDocumentService().getDownloadURL(parseInt(fileId));
+    var requestUrl = new java.net.URL(fileUrl);
+    var fileStream = requestUrl.openStream();
+    var fileBytes = org.apache.commons.io.IOUtils.toByteArray(fileStream);    
+
+    var attachmentDto = service.instantiate(&quot;com.totvs.technology.ecm.workflow.ws.ProcessAttachmentDto&quot;);
+    var attachment = service.instantiate(&quot;com.totvs.technology.ecm.workflow.ws.Attachment&quot;); 
+
+    attachment.setAttach(true);
+    attachment.setEditing(false);
+    attachment.setFileSize(0);
+    attachment.setFileName(fileName);               
+    attachment.setFilecontent(fileBytes);            
+    attachmentDto.getAttachments().add(attachment);
+    attachmentDto.setDescription(fileName);
+    return attachmentDto;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>ESP_LITERALS</eventId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>process.category = Lanzamiento de NFS&#xd;
+process.description = Proceso de lanzamiento de NFS&#xd;
+process.instructions = </eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>servicetask9</eventId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function servicetask9(attempt, message) {&#xd;
+&#xd;
+	var cnpjEmpresa = hAPI.getCardValue(&quot;cpf_tomador&quot;);	&#xd;
+    var cnpjEstabelecimento = hAPI.getCardValue(&quot;estabelecimento&quot;);&#xd;
+    var naturezaOperacao = hAPI.getCardValue(&quot;natureza_operacao&quot;);&#xd;
+	var cnpjFornecedor = hAPI.getCardValue(&quot;cpf_prestador&quot;);&#xd;
+	var numeroDocto = hAPI.getCardValue(&quot;numero_nota&quot;);&#xd;
+	var serieDocto = &quot;&quot;;&#xd;
+    var codigoObservacao = &quot;4&quot;;&#xd;
+    var dataEmissao = validaData(hAPI.getCardValue(&quot;data_emissao&quot;));&#xd;
+    var valor_inss = formatDecimal(hAPI.getCardValue(&quot;inss&quot;));&#xd;
+    var valor_irrf = formatDecimal(hAPI.getCardValue(&quot;irrf&quot;));&#xd;
+    var valor_csll = formatDecimal(hAPI.getCardValue(&quot;csll&quot;));&#xd;
+    var valor_cofins = formatDecimal(hAPI.getCardValue(&quot;cofins&quot;));&#xd;
+    var valor_pis_pasep = formatDecimal(hAPI.getCardValue(&quot;pis_pasep&quot;));    &#xd;
+    var itemRecords = getItemsRecords();&#xd;
+    var linkRecords = getLinksGedRecords();&#xd;
+    var boletoRecords = getBoletosRecords();&#xd;
+    var numeroFluig = hAPI.getCardValue(&quot;numero_processo&quot;);&#xd;
+&#xd;
+	var gson = new com.google.gson.Gson();&#xd;
+    var programName = &quot;fluig/esfluig002.r&quot;;&#xd;
+    var procedureName = &quot;geraNotaFiscal&quot;;&#xd;
+    var jsonToDatasul = [&#xd;
+        {&#xd;
+            &quot;dataType&quot;: &quot;character&quot;, &#xd;
+            &quot;name&quot;: &quot;cnpjEmpresa&quot;,  &#xd;
+            &quot;value&quot;: cnpjEmpresa,&#xd;
+            &quot;type&quot;: &quot;input&quot;&#xd;
+        }, {&#xd;
+            &quot;dataType&quot;: &quot;character&quot;, &#xd;
+            &quot;name&quot;: &quot;cnpjEstab&quot;,  &#xd;
+            &quot;value&quot;: cnpjEmpresa,&#xd;
+            &quot;type&quot;: &quot;input&quot;&#xd;
+        }, {&#xd;
+            &quot;dataType&quot;: &quot;character&quot;, &#xd;
+            &quot;name&quot;: &quot;cnpjFornecedor&quot;,  &#xd;
+            &quot;value&quot;: cnpjFornecedor,&#xd;
+            &quot;type&quot;: &quot;input&quot;&#xd;
+        }, {&#xd;
+            &quot;dataType&quot;: &quot;character&quot;, &#xd;
+            &quot;name&quot;: &quot;numeroDocto&quot;,  &#xd;
+            &quot;value&quot;: numeroDocto,&#xd;
+            &quot;type&quot;: &quot;input&quot;&#xd;
+        }, {&#xd;
+            &quot;dataType&quot;: &quot;character&quot;, &#xd;
+            &quot;name&quot;: &quot;serieDocto&quot;,  &#xd;
+            &quot;value&quot;: serieDocto,&#xd;
+            &quot;type&quot;: &quot;input&quot;&#xd;
+        }, {&#xd;
+            &quot;dataType&quot;: &quot;character&quot;, &#xd;
+            &quot;name&quot;: &quot;naturezaOperacao&quot;,  &#xd;
+            &quot;value&quot;: naturezaOperacao,&#xd;
+            &quot;type&quot;: &quot;input&quot;&#xd;
+        }, {&#xd;
+            &quot;dataType&quot;: &quot;integer&quot;, &#xd;
+            &quot;name&quot;: &quot;codigoObservacao&quot;,  &#xd;
+            &quot;value&quot;: codigoObservacao,&#xd;
+            &quot;type&quot;: &quot;input&quot;&#xd;
+        }, {&#xd;
+            &quot;dataType&quot;: &quot;character&quot;, &#xd;
+            &quot;name&quot;: &quot;dataEmissao&quot;,  &#xd;
+            &quot;value&quot;: dataEmissao,&#xd;
+            &quot;type&quot;: &quot;input&quot;&#xd;
+        }, {&#xd;
+            &quot;dataType&quot;: &quot;decimal&quot;, &#xd;
+            &quot;name&quot;: &quot;valor_inss&quot;,  &#xd;
+            &quot;value&quot;: valor_inss,&#xd;
+            &quot;type&quot;: &quot;input&quot;&#xd;
+        }, {&#xd;
+            &quot;dataType&quot;: &quot;decimal&quot;, &#xd;
+            &quot;name&quot;: &quot;valor_irrf&quot;,  &#xd;
+            &quot;value&quot;: valor_irrf,&#xd;
+            &quot;type&quot;: &quot;input&quot;&#xd;
+        }, {&#xd;
+            &quot;dataType&quot;: &quot;decimal&quot;, &#xd;
+            &quot;name&quot;: &quot;valor_csll&quot;,  &#xd;
+            &quot;value&quot;: valor_csll,&#xd;
+            &quot;type&quot;: &quot;input&quot;&#xd;
+        }, {&#xd;
+            &quot;dataType&quot;: &quot;decimal&quot;, &#xd;
+            &quot;name&quot;: &quot;valor_cofins&quot;,  &#xd;
+            &quot;value&quot;: valor_cofins,&#xd;
+            &quot;type&quot;: &quot;input&quot;&#xd;
+        }, {&#xd;
+            &quot;dataType&quot;: &quot;decimal&quot;, &#xd;
+            &quot;name&quot;: &quot;valor_pis_pasep&quot;,  &#xd;
+            &quot;value&quot;: valor_pis_pasep,&#xd;
+            &quot;type&quot;: &quot;input&quot;&#xd;
+        }, {&#xd;
+            &quot;dataType&quot;: &quot;integer&quot;, &#xd;
+            &quot;name&quot;: &quot;numeroFluig&quot;,  &#xd;
+            &quot;value&quot;: numeroFluig,&#xd;
+            &quot;type&quot;: &quot;input&quot;&#xd;
+        }, {&#xd;
+            &quot;dataType&quot;: &quot;character&quot;, &#xd;
+            &quot;name&quot;: &quot;pMensagem&quot;,  &#xd;
+            &quot;value&quot;: &quot;&quot;,&#xd;
+            &quot;type&quot;: &quot;output&quot;&#xd;
+        }, {&#xd;
+            &quot;dataType&quot;: &quot;temptable&quot;,&#xd;
+            &quot;name&quot;: &quot;tt_item&quot;,&#xd;
+            &quot;type&quot;: &quot;input&quot;,&#xd;
+            &quot;value&quot;: {&#xd;
+                &quot;name&quot;: &quot;tt_item&quot;,&#xd;
+                &quot;fields&quot;: [&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;numPedido&quot;,&#xd;
+                        &quot;label&quot;: &quot;Num Pedido&quot;,&#xd;
+                        &quot;type&quot;: &quot;integer&quot;&#xd;
+                    },{&#xd;
+                        &quot;name&quot;: &quot;numContrato&quot;,&#xd;
+                        &quot;label&quot;: &quot;Num Contrato&quot;,&#xd;
+                        &quot;type&quot;: &quot;integer&quot;&#xd;
+                    },{&#xd;
+                        &quot;name&quot;: &quot;codigoItem&quot;,&#xd;
+                        &quot;label&quot;: &quot;Codigo Item&quot;,&#xd;
+                        &quot;type&quot;: &quot;character&quot;&#xd;
+                    },{&#xd;
+                        &quot;name&quot;: &quot;quantidade&quot;,&#xd;
+                        &quot;label&quot;: &quot;Quantidade&quot;,&#xd;
+                        &quot;type&quot;: &quot;decimal&quot;&#xd;
+                    },{&#xd;
+                        &quot;name&quot;: &quot;precoUnitario&quot;,&#xd;
+                        &quot;label&quot;: &quot;Valor Unitario&quot;,&#xd;
+                        &quot;type&quot;: &quot;decimal&quot;&#xd;
+                    },{&#xd;
+                        &quot;name&quot;: &quot;precoTotal&quot;,&#xd;
+                        &quot;label&quot;: &quot;Total&quot;,&#xd;
+                        &quot;type&quot;: &quot;decimal&quot;&#xd;
+                    },{&#xd;
+                        &quot;name&quot;: &quot;descricaoItem&quot;,&#xd;
+                        &quot;label&quot;: &quot;Desc&quot;,&#xd;
+                        &quot;type&quot;: &quot;character&quot;&#xd;
+                    },{&#xd;
+                        &quot;name&quot;: &quot;valorDeducao&quot;,&#xd;
+                        &quot;label&quot;: &quot;Deducao&quot;,&#xd;
+                        &quot;type&quot;: &quot;decimal&quot;&#xd;
+                    },{&#xd;
+                        &quot;name&quot;: &quot;baseCalculo&quot;,&#xd;
+                        &quot;label&quot;: &quot;Base Calculo&quot;,&#xd;
+                        &quot;type&quot;: &quot;decimal&quot;&#xd;
+                    },{&#xd;
+                        &quot;name&quot;: &quot;aliquota&quot;,&#xd;
+                        &quot;label&quot;: &quot;Aliquota&quot;,&#xd;
+                        &quot;type&quot;: &quot;decimal&quot;&#xd;
+                    },{&#xd;
+                        &quot;name&quot;: &quot;valorISS&quot;,&#xd;
+                        &quot;label&quot;: &quot;Valor ISS&quot;,&#xd;
+                        &quot;type&quot;: &quot;decimal&quot;&#xd;
+                    },{&#xd;
+                        &quot;name&quot;: &quot;retidoISS&quot;,&#xd;
+                        &quot;label&quot;: &quot;ISS Retido&quot;,&#xd;
+                        &quot;type&quot;: &quot;character&quot;&#xd;
+                    },{&#xd;
+                        &quot;name&quot;: &quot;tt_cod-unid-negoc&quot;,&#xd;
+                        &quot;label&quot;: &quot;Código unidade&quot;,&#xd;
+                        &quot;type&quot;: &quot;character&quot;&#xd;
+                    },{&#xd;
+                        &quot;name&quot;: &quot;tt_ct-codigo&quot;,&#xd;
+                        &quot;label&quot;: &quot;Centro de Custo&quot;,&#xd;
+                        &quot;type&quot;: &quot;character&quot;&#xd;
+                    },{&#xd;
+                        &quot;name&quot;: &quot;tt_sc-codigo&quot;,&#xd;
+                        &quot;label&quot;: &quot;SC&quot;,&#xd;
+                        &quot;type&quot;: &quot;character&quot;&#xd;
+                    },{&#xd;
+                        &quot;name&quot;: &quot;tt_numeroOrdem&quot;,&#xd;
+                        &quot;label&quot;: &quot;Numero Ordem&quot;,&#xd;
+                        &quot;type&quot;: &quot;integer&quot;&#xd;
+                    }&#xd;
+                ],&#xd;
+                &quot;records&quot;: itemRecords&#xd;
+            }&#xd;
+        }, {&#xd;
+            &quot;dataType&quot;: &quot;temptable&quot;,&#xd;
+            &quot;name&quot;: &quot;tt_linkGed&quot;,&#xd;
+            &quot;type&quot;: &quot;input&quot;,&#xd;
+            &quot;value&quot;: {&#xd;
+                &quot;name&quot;: &quot;tt_linkGed&quot;,&#xd;
+                &quot;fields&quot;: [&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;tipoDocto&quot;,&#xd;
+                        &quot;label&quot;: &quot;tipoDocto&quot;,&#xd;
+                        &quot;type&quot;: &quot;character&quot;&#xd;
+                    },{&#xd;
+                        &quot;name&quot;: &quot;linkDocto&quot;,&#xd;
+                        &quot;label&quot;: &quot;linkDocto&quot;,&#xd;
+                        &quot;type&quot;: &quot;character&quot;&#xd;
+                    }&#xd;
+                ],&#xd;
+                &quot;records&quot;: linkRecords&#xd;
+            }&#xd;
+        }, {&#xd;
+            &quot;dataType&quot;: &quot;temptable&quot;,&#xd;
+            &quot;name&quot;: &quot;tt_boleto&quot;,&#xd;
+            &quot;type&quot;: &quot;input&quot;,&#xd;
+            &quot;value&quot;: {&#xd;
+                &quot;name&quot;: &quot;tt_boleto&quot;,&#xd;
+                &quot;fields&quot;: [&#xd;
+                    {&#xd;
+                        &quot;name&quot;: &quot;codigoBarra&quot;,&#xd;
+                        &quot;label&quot;: &quot;codigoBarra&quot;,&#xd;
+                        &quot;type&quot;: &quot;character&quot;&#xd;
+                    }&#xd;
+                ],&#xd;
+                &quot;records&quot;: boletoRecords&#xd;
+            }&#xd;
+        }&#xd;
+	];&#xd;
+&#xd;
+    var c1 = DatasetFactory.createConstraint(&quot;programName&quot;, programName, programName, ConstraintType.MUST);&#xd;
+    var c2 = DatasetFactory.createConstraint(&quot;procedureName&quot;, procedureName, procedureName, ConstraintType.MUST);&#xd;
+    var c3 = DatasetFactory.createConstraint(&quot;json&quot;, gson.toJson(jsonToDatasul), gson.toJson(jsonToDatasul), ConstraintType.MUST);&#xd;
+	var dsDatasul = DatasetFactory.getDataset(&quot;DatasulCall&quot;, null, new Array(c1, c2, c3), null);&#xd;
+	&#xd;
+	try {&#xd;
+		var jsonResponse = dsDatasul.getValue(0, &quot;response&quot;);&#xd;
+		if(jsonResponse == &quot;ERRO&quot;){&#xd;
+			throw dsDatasul.getValue(0, &quot;msgErro&quot;);&#xd;
+        }	&#xd;
+        var parsedJson = JSON.parse(jsonResponse);&#xd;
+        var mensagemDatasul = parsedJson[0].value;&#xd;
+        if(mensagemDatasul != &quot;Gerou&quot;){&#xd;
+            throw mensagemDatasul;&#xd;
+        }&#xd;
+	} catch (error) {&#xd;
+		throw error;&#xd;
+	}&#xd;
+&#xd;
+	return true;&#xd;
+&#xd;
+}&#xd;
+&#xd;
+function getItemsRecords(){&#xd;
+	var docId = getValue(&quot;WKCardId&quot;);&#xd;
+	&#xd;
+	var cstActive = DatasetFactory.createConstraint(&quot;metadata#active&quot;, true, true, ConstraintType.MUST);&#xd;
+    var cstTable = DatasetFactory.createConstraint(&quot;tablename&quot;, &quot;tb_items&quot;, &quot;tb_items&quot;, ConstraintType.MUST);&#xd;
+    var cstDocId = DatasetFactory.createConstraint(&quot;documentid&quot;, docId, docId, ConstraintType.MUST);&#xd;
+	var dsTableItems = DatasetFactory.getDataset(&quot;ds_lancamentoNotas&quot;, null, [cstActive, cstDocId, cstTable], null);&#xd;
+	&#xd;
+	var itemRecords = []&#xd;
+&#xd;
+	if(dsTableItems.rowsCount == 0){&#xd;
+		return itemRecords;&#xd;
+	}&#xd;
+&#xd;
+	for(var i = 0; i &lt; dsTableItems.rowsCount; i++){&#xd;
+        var quantidade = formatDecimal(dsTableItems.getValue(i, &quot;quantidade_item&quot;));&#xd;
+        var precoUnitario = formatDecimal(dsTableItems.getValue(i, &quot;preco_item&quot;));&#xd;
+        var precoTotal = getPrecoTotal(quantidade, precoUnitario);        &#xd;
+		var itemRecordRow = {&#xd;
+            &quot;numPedido&quot;: hAPI.getCardValue(&quot;numero_pedido&quot;) != &quot;&quot; ? new java.lang.Integer(hAPI.getCardValue(&quot;numero_pedido&quot;)) : new java.lang.Integer(&quot;0&quot;),&#xd;
+            &quot;numContrato&quot;: hAPI.getCardValue(&quot;contrato&quot;) != &quot;&quot; ? new java.lang.Integer(hAPI.getCardValue(&quot;contrato&quot;)) : new java.lang.Integer(&quot;0&quot;),&#xd;
+			&quot;codigoItem&quot;: dsTableItems.getValue(i, &quot;codigo_item&quot;),&#xd;
+			&quot;quantidade&quot;: quantidade,&#xd;
+			&quot;precoUnitario&quot;: precoUnitario,&#xd;
+			&quot;precoTotal&quot;: precoTotal.replace(&quot;,&quot;, &quot;.&quot;),&#xd;
+			&quot;descricaoItem&quot;: hAPI.getCardValue(&quot;discriminacao_servicos&quot;),&#xd;
+			&quot;valorDeducao&quot;: formatDecimal(hAPI.getCardValue(&quot;valor_total_deducoes&quot;)),&#xd;
+			&quot;baseCalculo&quot;: formatDecimal(hAPI.getCardValue(&quot;base_calculo&quot;)),&#xd;
+			&quot;aliquota&quot;: formatDecimal(hAPI.getCardValue(&quot;aliquota&quot;)),&#xd;
+			&quot;valorISS&quot;: formatDecimal(hAPI.getCardValue(&quot;valor_iss&quot;)),&#xd;
+            &quot;retidoISS&quot;: hAPI.getCardValue(&quot;iss_retido&quot;),&#xd;
+            &quot;tt_cod-unid-negoc&quot;: dsTableItems.getValue(i, &quot;cod_unidade_item&quot;),&#xd;
+            &quot;tt_ct-codigo&quot;: dsTableItems.getValue(i, &quot;conta_contabil&quot;),&#xd;
+            &quot;tt_sc-codigo&quot;: dsTableItems.getValue(i, &quot;centro_custo&quot;), &#xd;
+            &quot;tt_numeroOrdem&quot;: dsTableItems.getValue(i, &quot;numero_ordem&quot;) != &quot;&quot; ? new java.lang.Integer(dsTableItems.getValue(i, &quot;numero_ordem&quot;)) : new java.lang.Integer(&quot;0&quot;),&#xd;
+		}&#xd;
+		itemRecords.push(itemRecordRow);&#xd;
+	}&#xd;
+&#xd;
+	return itemRecords;&#xd;
+}&#xd;
+&#xd;
+function getPrecoTotal(precoItem, quantidadeItem){&#xd;
+    var decimalFormat = new java.text.DecimalFormat(&quot;0.00&quot;);&#xd;
+    precoItem = java.lang.Float.parseFloat(precoItem);&#xd;
+    quantidadeItem = java.lang.Float.parseFloat(quantidadeItem);&#xd;
+    var result = precoItem * quantidadeItem;&#xd;
+    return decimalFormat.format(result);&#xd;
+}&#xd;
+&#xd;
+function formatDecimal(string){&#xd;
+    var javaString = new java.lang.String(string);&#xd;
+    javaString = javaString.replaceAll(&quot;[^0-9.,]&quot;, &quot;&quot;);&#xd;
+	javaString = javaString.replace(&quot;.&quot;, &quot;&quot;);&#xd;
+	javaString = javaString.replace(&quot;,&quot;, &quot;.&quot;);&#xd;
+	return javaString == &quot;&quot; ? &quot;0&quot; : javaString;&#xd;
+}&#xd;
+&#xd;
+function getLinksGedRecords(){&#xd;
+    var linksRecords = []&#xd;
+    var attachments = hAPI.listAttachments();&#xd;
+    var anexosErp = hAPI.getCardValue(&quot;anexos_erp&quot;);&#xd;
+    if(anexosErp == &quot;&quot;){&#xd;
+        return linksRecords;&#xd;
+    }&#xd;
+    var jsonAttachmentsNames = JSON.parse(anexosErp);&#xd;
+    if(&#xd;
+        (jsonAttachmentsNames.bol.length == 0 &amp;&amp; jsonAttachmentsNames.nfse.length == 0) ||&#xd;
+        hAPI.listAttachments().size() == 0&#xd;
+    ){&#xd;
+        return linksRecords;&#xd;
+    }&#xd;
+    for(var i = 0; i &lt; attachments.size(); i++){&#xd;
+        var attachment = attachments.get(i);&#xd;
+        var attachmentName = String(attachment.getDocumentDescription());&#xd;
+        if(jsonAttachmentsNames.bol.indexOf(attachmentName) == -1 &amp;&amp; jsonAttachmentsNames.nfse.indexOf(attachmentName) == -1 ){&#xd;
+            continue;&#xd;
+        }&#xd;
+        var attachmentType = jsonAttachmentsNames.bol.indexOf(attachmentName) != -1 ? &quot;bol&quot; : &quot;nfse&quot;;&#xd;
+        var attachmentId = attachment.getDocumentId();&#xd;
+        var attachmentUrl = fluigAPI.getDocumentService().getDownloadURL(attachmentId);&#xd;
+        var linkRecordRow = {&#xd;
+            tipoDocto: attachmentType,&#xd;
+            linkDocto: attachmentUrl.replace(&quot;\u003d&quot;, &quot;=&quot;)&#xd;
+        }&#xd;
+        linksRecords.push(linkRecordRow);&#xd;
+    }&#xd;
+    return linksRecords;&#xd;
+}&#xd;
+&#xd;
+function getBoletosRecords(){&#xd;
+    var docId = getValue(&quot;WKCardId&quot;);&#xd;
+	&#xd;
+	var cstActive = DatasetFactory.createConstraint(&quot;metadata#active&quot;, true, true, ConstraintType.MUST);&#xd;
+    var cstTable = DatasetFactory.createConstraint(&quot;tablename&quot;, &quot;tb_boletos&quot;, &quot;tb_boletos&quot;, ConstraintType.MUST);&#xd;
+    var cstDocId = DatasetFactory.createConstraint(&quot;documentid&quot;, docId, docId, ConstraintType.MUST);&#xd;
+	var dsTableBoletos = DatasetFactory.getDataset(&quot;ds_lancamentoNotas&quot;, null, [cstActive, cstDocId, cstTable], null);&#xd;
+	&#xd;
+	var boletoRecords = []&#xd;
+&#xd;
+	if(dsTableBoletos.rowsCount == 0){&#xd;
+		return boletoRecords;&#xd;
+	}&#xd;
+&#xd;
+	for(var i = 0; i &lt; dsTableBoletos.rowsCount; i++){&#xd;
+        var codigoBarra = dsTableBoletos.getValue(i, &quot;codigo_barras&quot;);&#xd;
+        codigoBarra = codigoBarra.replaceAll(&quot;[^0-9]&quot;, &quot;&quot;);&#xd;
+		var boletoRecordRow = {&#xd;
+			&quot;codigoBarra&quot;: codigoBarra,&#xd;
+		}&#xd;
+		boletoRecords.push(boletoRecordRow);&#xd;
+	}&#xd;
+&#xd;
+	return boletoRecords;&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>afterProcessCreate</eventId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function afterProcessCreate(processId){&#xd;
+    hAPI.setCardValue(&apos;numero_processo&apos;, processId);&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>verificaAprovacaoNota</eventId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function verificaAprovacaoNota(){&#xd;
+&#xd;
+    if(hAPI.getCardValue(&quot;nota_duplicada&quot;) != &quot;&quot; &amp;&amp; hAPI.getCardValue(&quot;nota_duplicada&quot;) != undefined &amp;&amp; hAPI.getCardValue(&quot;nota_duplicada&quot;) != null){&#xd;
+        return false;&#xd;
+    }&#xd;
+&#xd;
+    var cstActive = DatasetFactory.createConstraint(&quot;metadata#active&quot;, true, true, ConstraintType.MUST);&#xd;
+    var dsFilialGrupo = DatasetFactory.getDataset(&quot;ds_cadastroFilialGrupo&quot;, null, [cstActive], null);&#xd;
+&#xd;
+    if(dsFilialGrupo.rowsCount == 0){&#xd;
+        return false;&#xd;
+    }&#xd;
+&#xd;
+    var docId = dsFilialGrupo.getValue(0, &quot;documentid&quot;);&#xd;
+&#xd;
+    var cstActive = DatasetFactory.createConstraint(&quot;metadata#active&quot;, true, true, ConstraintType.MUST);&#xd;
+    var cstTable = DatasetFactory.createConstraint(&quot;tablename&quot;, &quot;table_filial_grupo&quot;, &quot;table_filial_grupo&quot;, ConstraintType.MUST);&#xd;
+    var cstDocId = DatasetFactory.createConstraint(&quot;documentid&quot;, docId, docId, ConstraintType.MUST);&#xd;
+    var dsTableFilialGrupo = DatasetFactory.getDataset(&quot;ds_cadastroFilialGrupo&quot;, null, [cstActive, cstDocId, cstTable], null);&#xd;
+&#xd;
+    if(dsTableFilialGrupo.rowsCount == 0){&#xd;
+        return false;&#xd;
+    }&#xd;
+&#xd;
+    var cpfCnpjTomador = new java.lang.String(hAPI.getCardValue(&quot;cpf_tomador&quot;));&#xd;
+    cpfCnpjTomador = cpfCnpjTomador.replaceAll(&quot;[^\\d]&quot;, &quot;&quot;);&#xd;
+    for(var i = 0; i &lt; dsTableFilialGrupo.rowsCount; i++){&#xd;
+        var cpfCnpjTable = new java.lang.String(dsTableFilialGrupo.getValue(i, &quot;cpf_cnpj&quot;));&#xd;
+        cpfCnpjTable = cpfCnpjTable.replaceAll(&quot;[^\\d]&quot;, &quot;&quot;);&#xd;
+        if(cpfCnpjTable == cpfCnpjTomador){&#xd;
+            var filaFiliais = dsTableFilialGrupo.getValue(i, &quot;fila_filiais&quot;);&#xd;
+            if(&#xd;
+                (&#xd;
+                    filaFiliais == &quot;off&quot; || &#xd;
+                    filaFiliais == null || &#xd;
+                    filaFiliais == &quot;&quot;&#xd;
+                ) &amp;&amp;&#xd;
+                hAPI.getCardValue(&quot;aprovador&quot;) != &quot;&quot;&#xd;
+            ){&#xd;
+                return true;&#xd;
+            }else{&#xd;
+                return false;&#xd;
+            }&#xd;
+        }&#xd;
+    }&#xd;
+&#xd;
+    return false;&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>environment</eventId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>var ENVIRONMENT = {    &#xd;
+    &quot;activitiesNumberToNameMap&quot;: {&#xd;
+        &quot;6&quot;: &quot;Curadoria Manual&quot;,&#xd;
+        &quot;13&quot;: &quot;Aprovação da Nota - Filial&quot;,&#xd;
+        &quot;7&quot;: &quot;Aprovação da Nota - Matriz&quot;,&#xd;
+        &quot;49&quot;: &quot;Curadoria Aprovação&quot;,&#xd;
+        &quot;61&quot;: &quot;Correção da Integração&quot;,&#xd;
+        &quot;10&quot;: &quot;Correção da Integração&quot;&#xd;
+    }&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>verificaConfiabillidade</eventId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function verificaConfiabillidade(){&#xd;
+    log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; VALIDAÇÃO CONFIABILIDADE &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&apos;)&#xd;
+    &#xd;
+    if(hAPI.getCardValue(&quot;hasValidItems&quot;) == &quot;false&quot;){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; VALOR DOS ITEMS NÃO BATE COM O DA NOTA&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+&#xd;
+    var cstActive = DatasetFactory.createConstraint(&quot;metadata#active&quot;, true, true, ConstraintType.MUST);&#xd;
+    var dsCamposObrigatorios = DatasetFactory.getDataset(&quot;ds_camposObrigatorios&quot;, null, [cstActive], null);&#xd;
+    if(dsCamposObrigatorios.rowsCount == 0){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NÃO EXISTE CAMPOS OBRIGATÓRIOS&apos;)&#xd;
+        return true;&#xd;
+    }&#xd;
+    if(dsCamposObrigatorios.getValue(0, &quot;numero_processo&quot;) == &quot;on&quot; &amp;&amp; hAPI.getCardValue(&quot;numero_processo&quot;) == &quot;&quot;){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER NÚMERO DO PROCESSO&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+    if(dsCamposObrigatorios.getValue(0, &quot;numero_nota&quot;) == &quot;on&quot; &amp;&amp; hAPI.getCardValue(&quot;numero_nota&quot;) == &quot;&quot;){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER NÚMERO DA NOTA&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+    if(dsCamposObrigatorios.getValue(0, &quot;data_emissao&quot;) == &quot;on&quot; &amp;&amp; hAPI.getCardValue(&quot;data_emissao&quot;) == &quot;&quot;){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER DATA DA EMISSÃO&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+    if(dsCamposObrigatorios.getValue(0, &quot;data_prestacao&quot;) == &quot;on&quot; &amp;&amp; hAPI.getCardValue(&quot;data_prestacao&quot;) == &quot;&quot;){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER DATA DA PRESTAÇÃO&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+    if(dsCamposObrigatorios.getValue(0, &quot;numero_pedido&quot;) == &quot;on&quot; &amp;&amp; hAPI.getCardValue(&quot;numero_pedido&quot;) == &quot;&quot;){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER NÚMERO DO PEDIDO&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+    if(dsCamposObrigatorios.getValue(0, &quot;contrato&quot;) == &quot;on&quot; &amp;&amp; hAPI.getCardValue(&quot;contrato&quot;) == &quot;&quot;){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER CONTRATO&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+    if(dsCamposObrigatorios.getValue(0, &quot;natureza_operacao&quot;) == &quot;on&quot; &amp;&amp; hAPI.getCardValue(&quot;natureza_operacao&quot;) == &quot;&quot;){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER NATUREZA DA OPERAÇÃO&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+    if(dsCamposObrigatorios.getValue(0, &quot;nome_tomador&quot;) == &quot;on&quot; &amp;&amp; hAPI.getCardValue(&quot;nome_tomador&quot;) == &quot;&quot;){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER NOME DO TOMADOR&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+    if(dsCamposObrigatorios.getValue(0, &quot;cpf_tomador&quot;) == &quot;on&quot; &amp;&amp; hAPI.getCardValue(&quot;cpf_tomador&quot;) == &quot;&quot;){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER CNPJ DO TOMADOR&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+    if(dsCamposObrigatorios.getValue(0, &quot;inscricao_municipal&quot;) == &quot;on&quot; &amp;&amp; hAPI.getCardValue(&quot;inscricao_municipal&quot;) == &quot;&quot;){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER INSCRIÇÃO MUNICIPAL&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+    if(dsCamposObrigatorios.getValue(0, &quot;endereco_tomador&quot;) == &quot;on&quot; &amp;&amp; hAPI.getCardValue(&quot;endereco_tomador&quot;) == &quot;&quot;){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER ENDEREÇO DO TOMADOR&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+    if(dsCamposObrigatorios.getValue(0, &quot;nome_prestador&quot;) == &quot;on&quot; &amp;&amp; hAPI.getCardValue(&quot;nome_prestador&quot;) == &quot;&quot;){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER NOME DO PRESTADOR&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+    if(dsCamposObrigatorios.getValue(0, &quot;cpf_prestador&quot;) == &quot;on&quot; &amp;&amp; hAPI.getCardValue(&quot;cpf_prestador&quot;) == &quot;&quot;){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER CNPJ PRESTADOR&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+    if(dsCamposObrigatorios.getValue(0, &quot;endereco_prestador&quot;) == &quot;on&quot; &amp;&amp; hAPI.getCardValue(&quot;endereco_prestador&quot;) == &quot;&quot;){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER ENDEREÇO DO PRESTADOR&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+    if(dsCamposObrigatorios.getValue(0, &quot;discriminacao_servicos&quot;) == &quot;on&quot; &amp;&amp; hAPI.getCardValue(&quot;discriminacao_servicos&quot;) == &quot;&quot;){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER DISCRIMINAÇÃO DOS SERVIÇOS&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+    if(dsCamposObrigatorios.getValue(0, &quot;valor_total_nota&quot;) == &quot;on&quot; &amp;&amp; hAPI.getCardValue(&quot;valor_total_nota&quot;) == &quot;&quot;){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER VALOR TOTAL DA NOTA&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+    if(dsCamposObrigatorios.getValue(0, &quot;valor_total_deducoes&quot;) == &quot;on&quot; &amp;&amp; hAPI.getCardValue(&quot;valor_total_deducoes&quot;) == &quot;&quot;){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER VALOR TOTAL DEDUÇÕES&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+    if(dsCamposObrigatorios.getValue(0, &quot;base_calculo&quot;) == &quot;on&quot; &amp;&amp; hAPI.getCardValue(&quot;base_calculo&quot;) == &quot;&quot;){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER BASE DE CÁLCULO&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+    if(dsCamposObrigatorios.getValue(0, &quot;aliquota&quot;) == &quot;on&quot; &amp;&amp; hAPI.getCardValue(&quot;aliquota&quot;) == &quot;&quot;){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER ALIQUOTA&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+    if(dsCamposObrigatorios.getValue(0, &quot;valor_iss&quot;) == &quot;on&quot; &amp;&amp; hAPI.getCardValue(&quot;valor_iss&quot;) == &quot;&quot;){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER VALOR DE ISS&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+    if(dsCamposObrigatorios.getValue(0, &quot;iss_retido&quot;) == &quot;on&quot; &amp;&amp; hAPI.getCardValue(&quot;iss_retido&quot;) == &quot;&quot;){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER ISS RETIDO&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+    if(dsCamposObrigatorios.getValue(0, &quot;inss&quot;) == &quot;on&quot; &amp;&amp; hAPI.getCardValue(&quot;inss&quot;) == &quot;&quot;){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER INSS&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+    if(dsCamposObrigatorios.getValue(0, &quot;irrf&quot;) == &quot;on&quot; &amp;&amp; hAPI.getCardValue(&quot;irrf&quot;) == &quot;&quot;){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER IRRF&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+    if(dsCamposObrigatorios.getValue(0, &quot;csll&quot;) == &quot;on&quot; &amp;&amp; hAPI.getCardValue(&quot;csll&quot;) == &quot;&quot;){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER CSLL&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+    if(dsCamposObrigatorios.getValue(0, &quot;cofins&quot;) == &quot;on&quot; &amp;&amp; hAPI.getCardValue(&quot;cofins&quot;) == &quot;&quot;){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER COFINS&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+    if(dsCamposObrigatorios.getValue(0, &quot;pis_pasep&quot;) == &quot;on&quot; &amp;&amp; hAPI.getCardValue(&quot;pis_pasep&quot;) == &quot;&quot;){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER PIS/PASEP&apos;)&#xd;
+        return false;&#xd;
+    }    &#xd;
+    if(dsCamposObrigatorios.getValue(0, &quot;outras_informacoes&quot;) == &quot;on&quot; &amp;&amp; hAPI.getCardValue(&quot;outras_informacoes&quot;) == &quot;&quot;){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER OUTRAS INFORMAÇõES&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+    if(dsCamposObrigatorios.getValue(0, &quot;codigo_barras&quot;) == &quot;on&quot;){&#xd;
+        var valid = true;&#xd;
+        var hasAtLeastOne = false;&#xd;
+        var numProcess = getValue(&quot;WKNumProces&quot;);&#xd;
+        var formFields = hAPI.getCardData(numProcess);&#xd;
+        var contador = formFields.keySet().iterator();&#xd;
+        while(contador.hasNext()){&#xd;
+            var fieldId = contador.next();&#xd;
+            if(fieldId.match(/codigo_barras___/)){&#xd;
+                hasAtLeastOne = true;&#xd;
+                var sequence = fieldId.split(&quot;___&quot;)[1];&#xd;
+                if(hAPI.getCardValue(&quot;codigo_barras___&quot; + sequence) == &quot;&quot;){&#xd;
+                    log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER CÓDIGO DE BARRAS&apos;)&#xd;
+                    valid = false;&#xd;
+                }&#xd;
+            }&#xd;
+        }&#xd;
+        return hasAtLeastOne &amp;&amp; valid;&#xd;
+    }&#xd;
+    if (validaData(hAPI.getCardValue(&quot;data_emissao&quot;)) == &quot;&quot;) {&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; REPROVADO POR NÃO CONTER DATA CORRETA&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+&#xd;
+    //Validação de itens&#xd;
+    var hasAtLeastOneItem = false;&#xd;
+    var numProcess = getValue(&quot;WKNumProces&quot;);&#xd;
+    var formFields = hAPI.getCardData(numProcess);&#xd;
+    var contador = formFields.keySet().iterator();&#xd;
+    while(contador.hasNext()){&#xd;
+        var fieldId = contador.next();&#xd;
+        if(fieldId.match(/codigo_item___/)){&#xd;
+            hasAtLeastOneItem = true;&#xd;
+            var sequence = fieldId.split(&quot;___&quot;)[1];&#xd;
+            if(&#xd;
+                hAPI.getCardValue(&quot;codigo_item___&quot; + sequence) == &quot;&quot; &amp;&amp;&#xd;
+                dsCamposObrigatorios.getValue(0, &quot;codigo_item&quot;) == &quot;on&quot;       &#xd;
+            ){&#xd;
+                log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER CÓDIGO DO ITEM&apos;)&#xd;
+                return false;&#xd;
+            }&#xd;
+        }&#xd;
+        if(fieldId.match(/quantidade_item___/)){            &#xd;
+            var sequence = fieldId.split(&quot;___&quot;)[1];&#xd;
+            if(&#xd;
+                hAPI.getCardValue(&quot;quantidade_item___&quot; + sequence) == &quot;&quot; &amp;&amp;&#xd;
+                dsCamposObrigatorios.getValue(0, &quot;quantidade_item&quot;) == &quot;on&quot;       &#xd;
+            ){&#xd;
+                log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER QUANTIDADE DO ITEM&apos;)&#xd;
+                return false;&#xd;
+            }&#xd;
+        }&#xd;
+        if(fieldId.match(/cod_unidade_item___/)){            &#xd;
+            var sequence = fieldId.split(&quot;___&quot;)[1];&#xd;
+            if(&#xd;
+                hAPI.getCardValue(&quot;cod_unidade_item___&quot; + sequence) == &quot;&quot; &amp;&amp;&#xd;
+                dsCamposObrigatorios.getValue(0, &quot;cod_unidade_item&quot;) == &quot;on&quot;       &#xd;
+            ){&#xd;
+                log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER UNIDADE NEFOCIO DO ITEM&apos;)&#xd;
+                return false;&#xd;
+            }&#xd;
+        }&#xd;
+        if(fieldId.match(/preco_item___/)){            &#xd;
+            var sequence = fieldId.split(&quot;___&quot;)[1];&#xd;
+            if(&#xd;
+                hAPI.getCardValue(&quot;preco_item___&quot; + sequence) == &quot;&quot; &amp;&amp;&#xd;
+                dsCamposObrigatorios.getValue(0, &quot;preco_item&quot;) == &quot;on&quot;       &#xd;
+            ){&#xd;
+                log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO PREENCHER PRECO DO ITEM&apos;)&#xd;
+                return false;&#xd;
+            }&#xd;
+        }&#xd;
+        if(fieldId.match(/conta_contabil___/)){            &#xd;
+            var sequence = fieldId.split(&quot;___&quot;)[1];&#xd;
+            if(&#xd;
+                hAPI.getCardValue(&quot;conta_contabil___&quot; + sequence) == &quot;&quot; &amp;&amp;&#xd;
+                dsCamposObrigatorios.getValue(0, &quot;conta_contabil&quot;) == &quot;on&quot;       &#xd;
+            ){&#xd;
+                log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO CONTA CONTABIL DO ITEM&apos;)&#xd;
+                return false;&#xd;
+            }&#xd;
+        }&#xd;
+        if(fieldId.match(/centro_custo___/)){            &#xd;
+            var sequence = fieldId.split(&quot;___&quot;)[1];&#xd;
+            if(&#xd;
+                hAPI.getCardValue(&quot;centro_custo___&quot; + sequence) == &quot;&quot; &amp;&amp;&#xd;
+                dsCamposObrigatorios.getValue(0, &quot;centro_custo&quot;) == &quot;on&quot;       &#xd;
+            ){&#xd;
+                log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO CENTRO DE CUSTO DO ITEM&apos;)&#xd;
+                return false;&#xd;
+            }&#xd;
+        }&#xd;
+        if(fieldId.match(/numero_ordem___/)){            &#xd;
+            var sequence = fieldId.split(&quot;___&quot;)[1];&#xd;
+            if(&#xd;
+                hAPI.getCardValue(&quot;numero_ordem___&quot; + sequence) == &quot;&quot; &amp;&amp;&#xd;
+                dsCamposObrigatorios.getValue(0, &quot;numero_ordem&quot;) == &quot;on&quot;       &#xd;
+            ){&#xd;
+                log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NECESSÁRIO NUMERO DA ORDEM DO ITEM&apos;)&#xd;
+                return false;&#xd;
+            }&#xd;
+        }&#xd;
+    }&#xd;
+    if(!hasAtLeastOneItem){&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; NENHUM ITEM ENCONTRADO&apos;)&#xd;
+        return false;&#xd;
+    }&#xd;
+&#xd;
+    return true;&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>ENG_LITERALS</eventId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>process.category = Launch of NFS&#xd;
+process.description = NFS launch process&#xd;
+process.instructions = &#xd;
+4.name = Start&#xd;
+4.instructions =Request start, automatically filled by the AI robot</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>POR_LITERALS</eventId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>process.category = Lançamento de NFS&#xd;
+process.description = Processo de Lançamento de NFS&#xd;
+process.instructions = </eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>validaData</eventId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function validaData(data){&#xd;
+    log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; validaData&apos;);&#xd;
+    log.dir(data);&#xd;
+    &#xd;
+    if (data.match(/\d\d\/\d\d\/\d\d\d\d\s\d\d:\d\d:\d\d/)) {&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Primeiro Match&apos;);&#xd;
+        log.dir(data.match(/\d\d\/\d\d\/\d\d\d\d\s\d\d:\d\d:\d\d/));&#xd;
+&#xd;
+        return data.match(/\d\d\/\d\d\/\d\d\d\d\s\d\d:\d\d:\d\d/)[0];&#xd;
+    }&#xd;
+    &#xd;
+    if (data.match(/\d\d\/\d\d\/\d\d\d\d/)) {&#xd;
+        log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Segundo Match&apos;);&#xd;
+        log.dir(data.match(/\d\d\/\d\d\/\d\d\d\d/));&#xd;
+&#xd;
+        return data.match(/\d\d\/\d\d\/\d\d\d\d/)[0]&#xd;
+    }&#xd;
+&#xd;
+    log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Sem Match&apos;);    &#xd;
+&#xd;
+    return &apos;&apos;;&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+  </list>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>13</version>
+        <linkSequence>20</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>1080</positionX>
+      <positionY>297</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>13</version>
+        <linkSequence>24</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>289</positionX>
+      <positionY>154</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>13</version>
+        <linkSequence>25</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>290</positionX>
+      <positionY>405</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>13</version>
+        <linkSequence>40</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>1592</positionX>
+      <positionY>174</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>13</version>
+        <linkSequence>40</linkSequence>
+        <bendSequence>2</bendSequence>
+      </processLinkBendPK>
+      <positionX>1592</positionX>
+      <positionY>276</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>13</version>
+        <linkSequence>44</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>1142</positionX>
+      <positionY>404</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>13</version>
+        <linkSequence>47</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>1476</positionX>
+      <positionY>144</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>13</version>
+        <linkSequence>55</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>1888</positionX>
+      <positionY>512</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>13</version>
+        <linkSequence>55</linkSequence>
+        <bendSequence>2</bendSequence>
+      </processLinkBendPK>
+      <positionX>964</positionX>
+      <positionY>512</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>13</version>
+        <linkSequence>62</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>66</positionX>
+      <positionY>302</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>13</version>
+        <linkSequence>62</linkSequence>
+        <bendSequence>2</bendSequence>
+      </processLinkBendPK>
+      <positionX>66</positionX>
+      <positionY>421</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>13</version>
+        <linkSequence>66</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>1888</positionX>
+      <positionY>60</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>13</version>
+        <linkSequence>66</linkSequence>
+        <bendSequence>2</bendSequence>
+      </processLinkBendPK>
+      <positionX>964</positionX>
+      <positionY>60</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>13</version>
+        <linkSequence>72</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>562</positionX>
+      <positionY>304</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>processo_lancamento_nfs</processId>
+        <version>13</version>
+        <linkSequence>72</linkSequence>
+        <bendSequence>2</bendSequence>
+      </processLinkBendPK>
+      <positionX>562</positionX>
+      <positionY>360</positionY>
+    </ProcessLinkBend>
+  </list>
+  <list/>
+  <list/>
+  <list/>
+  <list>
+    <ProcessStateService>
+      <companyId>1</companyId>
+      <processId>processo_lancamento_nfs</processId>
+      <version>1</version>
+      <sequence>9</sequence>
+      <attempts>0</attempts>
+      <sucessFullMessage>Integração executada com sucesso</sucessFullMessage>
+      <serviceName></serviceName>
+      <frequency>10</frequency>
+      <frequencyType>0</frequencyType>
+    </ProcessStateService>
+    <ProcessStateService>
+      <companyId>1</companyId>
+      <processId>processo_lancamento_nfs</processId>
+      <version>1</version>
+      <sequence>57</sequence>
+      <attempts>0</attempts>
+      <sucessFullMessage>Integração executada com sucesso</sucessFullMessage>
+      <serviceName></serviceName>
+      <frequency>1</frequency>
+      <frequencyType>0</frequencyType>
+    </ProcessStateService>
+    <ProcessStateService>
+      <companyId>1</companyId>
+      <processId>processo_lancamento_nfs</processId>
+      <version>1</version>
+      <sequence>67</sequence>
+      <attempts>0</attempts>
+      <sucessFullMessage>Integração executada com sucesso</sucessFullMessage>
+      <serviceName></serviceName>
+      <frequency>1</frequency>
+      <frequencyType>0</frequencyType>
+    </ProcessStateService>
+  </list>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+</list>
